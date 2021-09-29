@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --fontBase: "san-serif";
   --font-color1: #ffffff;
@@ -10,40 +16,105 @@
   --bg-color2: rgb(135, 206, 235);
   --bg-color3: rgb(40, 68, 158);
   --bg-color4: rgb(0, 38, 119);
-}
 
+  --font-body: 15px;
+  --font-caption: 13px;
+}
+body {
+  font-size: var(--font-body);
+}
 /*About*/
 
+#about {
+  text-align: center;
+  padding: 40px 0;
+}
+#about h1 {
+  font-size: 40px;
+}
 #about hr {
-  width: 10%;
-  margin: 0 auto 20px;
+  width: 100px;
+  margin: 0 auto;
 }
 
+.card-container {
+  margin-top: 30px;
+}
+.card-container .card {
+  padding: 20px;
+  background-color: var(--bg-color2);
+}
+.card-container .card h3 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.card-container .card p {
+  font-size: var(--font-caption);
+  line-height: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .about-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .card-container {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+    max-width: 250px;
+  }
+
+  .card-container1 {
+    background-image: url("./../assets/images/aboutUs/ourVision.jpg");
+  }
+  .card-container2 {
+    background-image: url("./../assets/images/aboutUs/ourTeam.jpeg");
+  }
+  .card-container3 {
+    background-image: url("./../assets/images/aboutUs/ourMission.jpg");
+  }
+  .card-container .card {
+    color: var(--font-color1);
+    background-color: var(--overlay);
+    height: 100%;
+    width: 100%;
+    padding: 60px 40px;
+    visibility: hidden;
+    transition: visibility 0.5s ease-in-out;
+  }
+
+  .card-container:hover > .card {
+    visibility: visible;
+  }
+}
+
+#about .card-body {
+  background: var(--overlay);
+  color: var(--font-color1);
+  padding: 20px 10px;
+}
+
+/*footer*/
 #footer {
+  padding: 20px 0 0 0;
   background-color: var(--bg-color4);
   color: var(--font-color1);
 }
 
-@media screen and (min-width: 1024px) {
-  #about .card {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 770px;
-    max-width: 250px;
-  }
-  #about .card-body {
-    background: var(--overlay);
-    color: var(--font-color1);
-    padding: 2rem 1rem;
-  }
-  #about .card1 {
-    background-image: url("./../assets/images/aboutUs/ourVision.jpg");
-  }
-  #about .card2 {
-    background-image: url("./../assets/images/aboutUs/ourTeam.jpeg");
-  }
-  #about .card3 {
-    background-image: url("./../assets/images/aboutUs/ourMission.jpg");
-  }
+#footer div:first-child {
+  padding: 20px;
+}
+
+#footer div:first-child p {
+  line-height: 21px;
+}
+#footer div:last-child {
+  background-color: var(--bg-color2);
+  margin-top: 20px;
+  padding: 20px;
 }
