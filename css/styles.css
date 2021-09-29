@@ -1,0 +1,49 @@
+:root {
+  --fontBase: "san-serif";
+  --font-color1: #ffffff;
+  --font-color2: rgb(135, 206, 235);
+  --font-color3: rgb(40, 68, 158);
+  --font-color4: rgb(0, 38, 119);
+  --overlay: #00000050;
+
+  --bg-color1: #ffffff;
+  --bg-color2: rgb(135, 206, 235);
+  --bg-color3: rgb(40, 68, 158);
+  --bg-color4: rgb(0, 38, 119);
+}
+
+/*About*/
+
+#about hr {
+  width: 10%;
+  margin: 0 auto 20px;
+}
+
+#footer {
+  background-color: var(--bg-color4);
+  color: var(--font-color1);
+}
+
+@media screen and (min-width: 1024px) {
+  #about .card {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 770px;
+    max-width: 250px;
+  }
+  #about .card-body {
+    background: var(--overlay);
+    color: var(--font-color1);
+    padding: 2rem 1rem;
+  }
+  #about .card1 {
+    background-image: url("./../assets/images/aboutUs/ourVision.jpg");
+  }
+  #about .card2 {
+    background-image: url("./../assets/images/aboutUs/ourTeam.jpeg");
+  }
+  #about .card3 {
+    background-image: url("./../assets/images/aboutUs/ourMission.jpg");
+  }
+}
