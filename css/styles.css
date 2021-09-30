@@ -22,7 +22,6 @@
 }
 body {
   font-size: var(--font-body);
-  background-color: grey;
 }
 img {
   max-width: 100%;
@@ -138,6 +137,20 @@ img {
   justify-content: center;
   align-items: center;
   margin-top: -4px;
+}
+
+/*network*/
+
+#network {
+  text-align: center;
+  padding: 40px 20px;
+}
+#network h1 {
+  font-size: 40px;
+}
+#network hr {
+  width: 100px;
+  margin: 0 auto 30px;
 }
 
 @media screen and (min-width: 768px) {
