@@ -10,8 +10,6 @@
       content="palabra clave 1, palabra clave 2, palabra clave 3"
     />
     <meta name="copyright" content="Propietario del copyright" />
-
-
     <link rel="stylesheet" href="./css/styles.css" />
     <title>The Twelve Apostles Inc.</title>
   </head>

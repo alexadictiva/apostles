@@ -1,7 +1,7 @@
  <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">The Twelve Apostles Inc.</a>
+          <a class="navbar-brand" href="./index.php">The Twelve Apostles Inc.</a>
           <button
             class="navbar-toggler"
             type="button"

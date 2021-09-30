@@ -4,12 +4,74 @@ include './components/header.php';
 
 ?>
 
+<main>
+  <section id="distribution">
+    <h1>DISTRIBUTION</h1>
+    <hr>
+    <div class="distribution-container">
+      <div class="distribution-description-container">
+        <p>
+          The Twelve Apostles Inc. has established commercial relationships with various kind of clients thanks to the requirement of the new distribution landscape. This allows brands to maximize the reach on a global scale. 
+        </p>
+      </div>
+      <div class="distribution-cards-container">
+        <article class="card-container">
+          <div class="card-container-image">
+            <img src="./assets/images/distribution/independentBoutiques.jpg" alt="">
+          </div>
+          <div class="card-container-title">
+            <h3>Independent Boutiques</h3>
+          </div>
+        </article>
+        <article class="card-container">
+          <div class="card-container-image">
+            <img src="./assets/images/distribution/retailChainStores.jpg" alt="">
+          </div>
+          <div class="card-container-title">
+            <h3>Retail Chain Stores</h3>
+          </div>
+        </article>
+        <article class="card-container">
+          <div class="card-container-image">
+            <img src="./assets/images/distribution/specialtyStores.jpg" alt="">
+          </div>
+          <div class="card-container-title">
+            <h3>Specialty Store</h3>
+          </div>
+        </article>
+        <article class="card-container">
+          <div class="card-container-image">
+            <img src="./assets/images/distribution/corporateSales.jpg" alt="">
+          </div>
+          <div class="card-container-title">
+            <h3>Corporate Sales</h3>
+          </div>
+        </article>
+        <article class="card-container">
+          <div class="card-container-image">
+            <img src="./assets/images/distribution/departmentStores.jpg" alt="">
+          </div>
+          <div class="card-container-title">
+            <h3>Department Store</h3>
+          </div>
+        </article>
+        <article class="card-container">
+          <div class="card-container-image">
+            <img src="./assets/images/distribution/eCommerce.jpg" alt="">
+          </div>
+          <div class="card-container-title">
+            <h3>E-commerce</h3>
+          </div>
+        </article>
+
+        
+        
+      </div>
+    </div>
+  </section>
+</main>
 
 
-
-<h1>
-  Distrubution
-</h1>
 
 
 

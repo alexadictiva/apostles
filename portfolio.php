@@ -7,9 +7,6 @@ include './components/header.php';
 
 
 
-<h1>
-Portfolio
-</h1>
 
 
 
