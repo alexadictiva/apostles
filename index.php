@@ -2,5 +2,13 @@
 <?php
 include './components/head.php';
 include './components/header.php';
-include './components/footer.php';
+?>
 
+
+
+
+
+
+<?php
+include './components/footer.php';
+?>
