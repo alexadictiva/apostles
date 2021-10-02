@@ -16,30 +16,28 @@
     url("./../fonts/Raleway-Thin.woff2");
 }
 :root {
+  font-size: 62.5%;
   --fontTitle: "Raleway";
   --fontBase: "Open Sans";
   --font-color1: #ffffff;
   --font-color2: rgb(135, 206, 235);
   --font-color3: rgb(40, 68, 158);
   --font-color4: rgb(0, 38, 119);
-  --overlay: #00000050;
+  --overlay: #0a177ea3;
 
   --bg-color1: #ffffff;
   --bg-color2: rgb(135, 206, 235);
   --bg-color3: rgb(40, 68, 158);
   --bg-color4: rgb(0, 38, 119);
 
-  --font-body: 15px;
-  --font-caption: 13px;
+  --font-body: 1.6rem;
+  --font-caption: 1.4rem;
 }
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-size: var(--font-body);
   font-family: var(--fontBase);
-  /*
-  display:flex;
-  justify-content:center; */
 }
 img {
   max-width: 100%;
@@ -51,6 +49,9 @@ ul {
 
 a {
   text-decoration: none;
+}
+iframe {
+  border: 0;
 }
 .wrapper {
   margin: auto;
@@ -69,7 +70,7 @@ header {
   position: fixed;
   z-index: 20;
 }
-header .menu {
+.menu {
   height: 100%;
   width: 100%;
   position: relative;
@@ -80,60 +81,57 @@ header .menu {
 }
 
 header .menu label {
-  padding: 0 30px;
+  padding-right: 30px;
   cursor: pointer;
 }
 
-header .menu .menuBotton {
+.menuBotton {
   display: none;
 }
 
-header .menu .navContainer {
+.navContainer {
   position: absolute;
   top: 60px;
   right: -600px;
   transition: all 0.5s ease-out;
 }
 
-header .menu .navContainer .menuContainer {
+.menuContainer {
   height: 100vh;
   width: 50vw;
   background-color: var(--bg-color1);
 }
 
-header .menu .navContainer .menuContainer .menuDropdown {
+.menuDropdown {
   height: 100vh;
   color: var(--bg-color3);
 }
 
-header .menu .navContainer .menuContainer .menuDropdown .menuItem {
-  font-size: 17px;
-  line-height: 70px;
+.menuItem {
+  font-size: 1.7rem;
+  line-height: 7rem;
   padding: 0 0 0 30px;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 
-header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
+.menuLink {
   color: var(--bg-color3);
   transition: all 0.5s ease-in-out;
 }
 
-header .menu .navContainer .menuContainer .menuDropdown .menuItem:hover {
+.menuItem:hover {
   box-shadow: 768px 0 8px var(--bg-color4) inset;
 }
 
-header
-  .menu
-  .navContainer
-  .menuContainer
-  .menuDropdown
-  .menuItem:hover
-  > .menuLink {
+.menuItem:hover > .menuLink {
   color: var(--bg-color2);
 }
 
-header .menu .menuBotton:checked ~ .navContainer {
+.menu label img {
+  width: 35px;
+}
+.menuBotton:checked ~ .navContainer {
   right: 0;
 }
 
@@ -144,27 +142,192 @@ header .menu .menuBotton:checked ~ .navContainer {
   .menu label {
     display: none;
   }
-  header .menu .navContainer {
+  .navContainer {
     position: static;
     top: 0;
   }
-  header .menu .navContainer .menuContainer .menuDropdown {
+  .menuDropdown {
     padding-right: 15px;
     display: flex;
     justify-content: flex-end;
     height: 60px;
   }
-  header .menu .navContainer .menuContainer {
+  .menuContainer {
     height: 60px;
     width: 100vw;
     top: 0;
     background: transparent;
   }
-  header .menu .navContainer .menuContainer .menuDropdown .menuItem {
-    padding: 0 20px;
+  .menuItem {
+    padding: 0 10px;
   }
-  header .menu .navContainer .menuContainer .menuDropdown .menuItem:hover {
+  .menuItem:hover {
     box-shadow: 100% 0 0 #ffffff inset;
+  }
+}
+/*Main View*/
+
+/*intro*/
+#intro {
+  background-color: var(--bg-color3);
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.intro-container {
+  width: 100%;
+  background-color: var(--bg-color2);
+  padding: 20px;
+  text-align: center;
+  font-family: var(--fontTitle);
+  color: var(--font-color1);
+}
+.intro-description-bolder {
+  margin-bottom: 20px;
+}
+.intro-description-bolder p {
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
+.intro-description-normal h1 {
+  font-weight: 400;
+  font-size: 2.7rem;
+  line-height: 2.2rem;
+}
+/*card main view*/
+.cards-main-view {
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card-main {
+  background-color: var(--bg-color4);
+  color: var(--font-color1);
+  padding: 40px 20px;
+  text-align: center;
+}
+.card-main h2 {
+  font-family: var(--fontTitle);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.card-main p {
+  margin-bottom: 40px;
+}
+.read-more-btn {
+  background-color: var(--bg-color3);
+  padding: 10px 20px;
+  color: var(--font-color1);
+  font-size: var(--font-caption);
+}
+/*about main view*/
+.about-main-view {
+  background-image: url("./../assets/images/aboutUs/ourVision.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-main-view .overlay {
+  background: var(--overlay);
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--font-color1);
+}
+
+.about-main-view .overlay h2 {
+  margin-bottom: 30px;
+  font-family: var(--fontTitle);
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  font-weight: 400;
+}
+.about-main-view .overlay p {
+  max-width: 768px;
+  margin: 0 auto 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .cards-main-view {
+    padding: 60px 40px;
+    flex-direction: row;
+  }
+}
+/*contact us main view*/
+
+#contactus {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--font-color1);
+  background: var(--bg-color4);
+}
+#contactus h2 {
+  margin-bottom: 30px;
+  font-family: var(--fontTitle);
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+}
+.contactus-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form-container p:nth-child(1) {
+  margin: 0 0 30px;
+}
+.form-container p:nth-child(2) {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.form-container .form-control {
+  margin-bottom: 20px;
+}
+
+.form-container .form-control input,
+.form-container .form-control textarea {
+  width: 100%;
+  padding-left: 5px;
+}
+.form-container .form-control input {
+  border: 0;
+  outline: none;
+  height: 40px;
+}
+
+.form-container .form-control input::placeholder,
+.form-container .form-control textarea::placeholder {
+  font-family: var(--fontBase);
+  color: red;
+  font-size: var(--font-caption);
+  padding-left: 5px;
+}
+.form-container .form-control textarea::placeholder {
+  padding-top: 5px;
+}
+
+.btn-sumbit {
+  background-color: var(--bg-color3);
+  padding: 10px 40px;
+  color: var(--font-color1);
+  font-size: var(--font-caption);
+  border: 0;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contactus-content {
+    flex-direction: row;
+  }
+  .form-container {
+    order: 2;
+    width: 50%;
+  }
+  .contactus-description {
+    order: 1;
+    width: 50%;
   }
 }
 
@@ -175,7 +338,7 @@ header .menu .menuBotton:checked ~ .navContainer {
   padding: 40px 0;
 }
 #about h1 {
-  font-size: 40px;
+  font-size: 4rem;
 }
 #about hr {
   width: 100px;
@@ -190,14 +353,14 @@ header .menu .menuBotton:checked ~ .navContainer {
   background-color: var(--bg-color2);
 }
 #about .card-container .card h3 {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 2rem;
+  line-height: 3rem;
   margin-bottom: 5px;
   text-transform: uppercase;
 }
 #about .card-container .card p {
   font-size: var(--font-caption);
-  line-height: 16px;
+  line-height: 1.6rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -244,7 +407,7 @@ header .menu .menuBotton:checked ~ .navContainer {
   padding: 40px 20px;
 }
 #distribution h1 {
-  font-size: 40px;
+  font-size: 4rem;
 }
 #distribution hr {
   width: 100px;
@@ -279,6 +442,54 @@ header .menu .menuBotton:checked ~ .navContainer {
   align-items: center;
   margin-top: -4px;
 }
+/*Portfolio*/
+#portfolio {
+  padding: 40px 20px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: block;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.alignement {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.alignement div:first-child {
+  width: 100%;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 280px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-image1 {
+  background-image: url("./../assets/images/portfolio/watches.jpg");
+}
+
+.swiper-pagination {
+  position: static;
+  text-align: end;
+}
 
 /*network*/
 
@@ -287,17 +498,15 @@ header .menu .menuBotton:checked ~ .navContainer {
   padding: 40px 20px;
 }
 #network h1 {
-  font-size: 40px;
+  font-size: 4rem;
 }
 #network hr {
   width: 100px;
   margin: 0 auto 30px;
 }
-.map-container {
-  margin: 10px 0 40px;
-}
+
 .description-network {
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 .description-network p span {
   font-weight: bold;
@@ -352,7 +561,7 @@ header .menu .menuBotton:checked ~ .navContainer {
 }
 
 #footer div:first-child p {
-  line-height: 21px;
+  line-height: 2.1rem;
 }
 #footer div:last-child {
   background-color: var(--bg-color2);

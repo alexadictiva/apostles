@@ -18,7 +18,9 @@
   
 </footer>
 </div>
-    <script src="./js/main.js"></script>
+    <script >
+      console.log("si funciona");
+    </script>
   </body>
 </html>
 

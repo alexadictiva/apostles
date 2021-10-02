@@ -1,8 +1,8 @@
 <div class="wrapper">
 <header>
       <section class="menu">
-        <label for="menuBotton">
-          <img src="https://www.samueldiosdado.com/wp-content/uploads/2017/08/Men%C3%BA-hamburguesa-herramienta-practica-o-icono-inutil.png" style="width:30px; height:15px" />
+        <label for="menuBotton" >
+          <img src="./assets/icon/menuIcon.svg" />
         </label>
         <input
           type="checkbox"
