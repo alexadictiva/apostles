@@ -5,7 +5,13 @@ include './components/header.php';
 ?>
 
 
-
+<main>
+<section>
+<h1>
+</h1>
+primera paginaaaaaaaaaaaaaaaaaaaaaaaaaa
+</section>
+</main>
 
 
 

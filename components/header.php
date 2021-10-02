@@ -1,45 +1,36 @@
 <div class="wrapper">
- <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.php">The Twelve Apostles Inc.</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.php"
-                  >Home</a
-                >
+<header>
+      <section class="menu">
+        <label for="menuBotton">
+          <img src="https://www.samueldiosdado.com/wp-content/uploads/2017/08/Men%C3%BA-hamburguesa-herramienta-practica-o-icono-inutil.png" style="width:30px; height:15px" />
+        </label>
+        <input
+          type="checkbox"
+          name="menuBotton"
+          class="menuBotton"
+          id="menuBotton"
+        />
+        <div class="navContainer">
+          <nav class="menuContainer">
+            <ul class="menuDropdown">
+              <li class="menuItem"><a class="menuLink" href="./index.php">HOME</a></li>
+              <li class="menuItem">
+                <a class="menuLink" href="./about.php">ABOUT US</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./about.php"
-                  >About Us</a
-                >
+              <li class="menuItem">
+                <a class="menuLink" href="./portfolio.php">PORTFOLIO</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./portfolio.php">Portfolio</a>
+              <li class="menuItem">
+                <a class="menuLink" href="./distribution.php">DISTRIBUTION</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./distribution.php">Distribution</a>
+              <li class="menuItem">
+                <a class="menuLink" href="./network.php">NETWORK</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./network.php">Network</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contactus">Contact Us</a>
+               <li class="menuItem">
+                <a class="menuLink" href="#contactus">CONTACT US</a>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
-      </nav>
+      </section>
     </header>
