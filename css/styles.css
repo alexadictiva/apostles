@@ -446,6 +446,15 @@ header .menu label {
 #portfolio {
   padding: 40px 20px;
 }
+#portfolio h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+#portfolio hr {
+  width: 100px;
+  margin: 0 auto 30px;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -485,10 +494,33 @@ header .menu label {
 .portfolio-image1 {
   background-image: url("./../assets/images/portfolio/watches.jpg");
 }
+.portfolio-image2 {
+  background-image: url("./../assets/images/portfolio/jewlery.jpg");
+}
+.portfolio-image3 {
+  background-image: url("./../assets/images/portfolio/handbags.jpg");
+}
+.portfolio-image4 {
+  background-image: url("./../assets/images/portfolio/travelGear.jpg");
+}
+.portfolio-image5 {
+  background-image: url("./../assets/images/portfolio/homeGoods.jpg");
+}
+.portfolio-image6 {
+  background-image: url("./../assets/images/portfolio/moreToCome.jpg");
+}
 
 .swiper-pagination {
   position: static;
   text-align: end;
+}
+.portfolio-description {
+  margin: 0 0 20px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-image {
+    height: 320px;
+  }
 }
 
 /*network*/
