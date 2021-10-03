@@ -19,16 +19,23 @@
   font-size: 62.5%;
   --fontTitle: "Raleway";
   --fontBase: "Open Sans";
+  --font-color-main: #0c3c60;
   --font-color1: #ffffff;
-  --font-color2: rgb(135, 206, 235);
+  --font-color2: #5f8099;
   --font-color3: rgb(40, 68, 158);
-  --font-color4: rgb(0, 38, 119);
+  --font-color4: #28449e;
+  --overlay1: #ffffff50;
+  --overlay2: #3668889a;
   --overlay: #0a177ea3;
-
+  --bg-card-main: #0c3c60;
+  --bg-contact-main: #2e5776;
+  --bg-color-footer: #0c3c60;
+  --bg-color-card-about: lightgrey;
+  --bg-btn: #6ea4ca;
   --bg-color1: #ffffff;
-  --bg-color2: rgb(135, 206, 235);
-  --bg-color3: rgb(40, 68, 158);
-  --bg-color4: rgb(0, 38, 119);
+  --bg-color2: yellow;
+  --bg-color3: green;
+  --bg-color4: red;
 
   --font-body: 1.6rem;
   --font-caption: 1.4rem;
@@ -38,6 +45,7 @@ body {
   scroll-behavior: smooth;
   font-size: var(--font-body);
   font-family: var(--fontBase);
+  color: var(--font-color-main);
 }
 img {
   max-width: 100%;
@@ -176,7 +184,7 @@ header .menu label {
 }
 .intro-container {
   width: 100%;
-  background-color: var(--bg-color2);
+  background-color: var(--overlay1);
   padding: 20px;
   text-align: center;
   font-family: var(--fontTitle);
@@ -197,13 +205,13 @@ header .menu label {
 }
 /*card main view*/
 .cards-main-view {
-  background-color: grey;
+  background-color: var(--bg-color1);
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 .card-main {
-  background-color: var(--bg-color4);
+  background-color: var(--bg-btn);
   color: var(--font-color1);
   padding: 40px 20px;
   text-align: center;
@@ -230,7 +238,7 @@ header .menu label {
   background-size: cover;
 }
 .about-main-view .overlay {
-  background: var(--overlay);
+  background: var(--overlay2);
   padding: 40px 20px;
   text-align: center;
   color: var(--font-color1);
@@ -260,7 +268,7 @@ header .menu label {
   padding: 40px 20px;
   text-align: center;
   color: var(--font-color1);
-  background: var(--bg-color4);
+  background: var(--bg-contact-main);
 }
 #contactus h2 {
   margin-bottom: 30px;
@@ -300,7 +308,7 @@ header .menu label {
 .form-container .form-control input::placeholder,
 .form-container .form-control textarea::placeholder {
   font-family: var(--fontBase);
-  color: red;
+  color: var(--bg-card-main);
   font-size: var(--font-caption);
   padding-left: 5px;
 }
@@ -309,7 +317,7 @@ header .menu label {
 }
 
 .btn-sumbit {
-  background-color: var(--bg-color3);
+  background-color: var(--bg-btn);
   padding: 10px 40px;
   color: var(--font-color1);
   font-size: var(--font-caption);
@@ -350,7 +358,7 @@ header .menu label {
 }
 #about .card-container .card {
   padding: 20px;
-  background-color: var(--bg-color2);
+  background-color: var(--bg-color-card-about);
 }
 #about .card-container .card h3 {
   font-size: 2rem;
@@ -388,7 +396,7 @@ header .menu label {
   }
   #about .card-container .card {
     color: var(--font-color1);
-    background-color: var(--overlay);
+    background-color: var(--overlay2);
     height: 100%;
     width: 100%;
     padding: 60px 40px;
@@ -584,7 +592,7 @@ header .menu label {
 /*footer*/
 #footer {
   padding: 20px 0 0 0;
-  background-color: var(--bg-color4);
+  background-color: var(--bg-color-footer);
   color: var(--font-color1);
 }
 
