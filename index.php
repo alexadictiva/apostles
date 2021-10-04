@@ -28,7 +28,7 @@ include './components/header.php';
   <article class="card-main card2">
     <h2>DISTRIBUTION</h2>
     <p>The Twelve Apostles Inc. has established commercial relationships with various kind of clients thanks to the requirement of the new distribution landscape. This allows brands to maximize the reach on a global scale. </p>
-    <a href="./distribution" class="read-more-btn">Read More</a>
+    <a href="./distribution.php" class="read-more-btn">Read More</a>
   </article>
   <article class="card-main card3">
     <h2>NETWORK</h2>

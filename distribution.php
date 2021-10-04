@@ -17,7 +17,22 @@ include './components/header.php';
       <div class="distribution-cards-container">
         <article class="card-container">
           <div class="card-container-image">
-            <img src="./assets/images/distribution/independentBoutiques.jpg" alt="">
+            
+            <picture>
+                <source
+                  media="(max-width: 414px)"
+                  srcset="./assets/images/distribution/mobile/independentBoutiques.jpg"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/images/distribution/tablet/independentBoutiques.jpg"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="./assets/images/distribution/desktop/independentBoutiques.jpg"
+                />
+                <img src="./assets/images/distribution/mobile/independentBoutiques.jpg" alt="">
+              </picture>
           </div>
           <div class="card-container-title">
             <h3>Independent Boutiques</h3>
@@ -25,7 +40,22 @@ include './components/header.php';
         </article>
         <article class="card-container">
           <div class="card-container-image">
-            <img src="./assets/images/distribution/retailChainStores.jpg" alt="">
+            
+             <picture>
+                <source
+                  media="(max-width: 414px)"
+                  srcset="./assets/images/distribution/mobile/retailChainStores.jpg"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/images/distribution/tablet/retailChainStores.jpg"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="./assets/images/distribution/desktop/retailChainStores.jpg"
+                />
+                <img src="./assets/images/distribution/mobile/retailChainStores.jpg" alt="">
+              </picture>
           </div>
           <div class="card-container-title">
             <h3>Retail Chain Stores</h3>
@@ -33,7 +63,26 @@ include './components/header.php';
         </article>
         <article class="card-container">
           <div class="card-container-image">
-            <img src="./assets/images/distribution/specialtyStores.jpg" alt="">
+            
+
+              <picture>
+                <source
+                  media="(max-width: 414px)"
+                  srcset="./assets/images/distribution/mobile/specialtyStores.jpg"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/images/distribution/tablet/specialtyStores.jpg"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="./assets/images/distribution/desktop/specialtyStores.jpg"
+                />
+                <img src="./assets/images/distribution/mobile/specialtyStores.jpg" alt="">
+              </picture>
+
+
+
           </div>
           <div class="card-container-title">
             <h3>Specialty Store</h3>
@@ -41,7 +90,22 @@ include './components/header.php';
         </article>
         <article class="card-container">
           <div class="card-container-image">
-            <img src="./assets/images/distribution/corporateSales.jpg" alt="">
+            
+              <picture>
+                <source
+                  media="(max-width: 414px)"
+                  srcset="./assets/images/distribution/mobile/corporateSales.jpg"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/images/distribution/tablet/corporateSales.jpg"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="./assets/images/distribution/desktop/corporateSales.jpg"
+                />
+                <img src="./assets/images/distribution/mobile/corporateSales.jpg" alt="">
+              </picture>
           </div>
           <div class="card-container-title">
             <h3>Corporate Sales</h3>
@@ -49,7 +113,23 @@ include './components/header.php';
         </article>
         <article class="card-container">
           <div class="card-container-image">
-            <img src="./assets/images/distribution/departmentStores.jpg" alt="">
+            
+            
+              <picture>
+                <source
+                  media="(max-width: 414px)"
+                  srcset="./assets/images/distribution/mobile/departmentStores.jpg"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/images/distribution/tablet/departmentStores.jpg"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="./assets/images/distribution/desktop/departmentStores.jpg"
+                />
+                <img src="./assets/images/distribution/mobile/departmentStores.jpg" alt="">
+              </picture>
           </div>
           <div class="card-container-title">
             <h3>Department Store</h3>
@@ -57,7 +137,23 @@ include './components/header.php';
         </article>
         <article class="card-container">
           <div class="card-container-image">
-            <img src="./assets/images/distribution/eCommerce.jpg" alt="">
+            
+            
+              <picture>
+                <source
+                  media="(max-width: 414px)"
+                  srcset="./assets/images/distribution/mobile/eCommerce.jpg"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/images/distribution/tablet/eCommerce.jpg"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="./assets/images/distribution/desktop/eCommerce.jpg"
+                />
+                <img src="./assets/images/distribution/mobile/eCommerce.jpg" alt="">
+              </picture>
           </div>
           <div class="card-container-title">
             <h3>E-commerce</h3>

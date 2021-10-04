@@ -27,18 +27,17 @@
   --overlay1: #ffffff50;
   --overlay2: #3668889a;
   --overlay: #0a177ea3;
+  --bg-main: #0c3c60;
+  --bg-intro: #2e5776;
   --bg-card-main: #0c3c60;
   --bg-contact-main: #2e5776;
-  --bg-color-footer: #0c3c60;
+  --bg-color-footer: #0c3c60; /*azul oscuro*/
   --bg-color-card-about: lightgrey;
   --bg-btn: #6ea4ca;
   --bg-color1: #ffffff;
-  --bg-color2: yellow;
-  --bg-color3: green;
-  --bg-color4: red;
 
   --font-body: 1.6rem;
-  --font-caption: 1.4rem;
+  --font-caption: 1.3rem;
 }
 body {
   overflow-x: hidden;
@@ -177,7 +176,7 @@ header .menu label {
 
 /*intro*/
 #intro {
-  background-color: var(--bg-color3);
+  background-color: var(--bg-intro);
   height: 90vh;
   display: flex;
   align-items: center;
@@ -211,7 +210,7 @@ header .menu label {
   gap: 20px;
 }
 .card-main {
-  background-color: var(--bg-btn);
+  background-color: var(--bg-card-main);
   color: var(--font-color1);
   padding: 40px 20px;
   text-align: center;
@@ -225,7 +224,7 @@ header .menu label {
   margin-bottom: 40px;
 }
 .read-more-btn {
-  background-color: var(--bg-color3);
+  background-color: var(--bg-btn);
   padding: 10px 20px;
   color: var(--font-color1);
   font-size: var(--font-caption);
@@ -247,9 +246,9 @@ header .menu label {
 .about-main-view .overlay h2 {
   margin-bottom: 30px;
   font-family: var(--fontTitle);
-  font-size: 2.4rem;
-  line-height: 2.9rem;
-  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5rem;
+  font-weight: 700;
 }
 .about-main-view .overlay p {
   max-width: 768px;
@@ -273,9 +272,9 @@ header .menu label {
 #contactus h2 {
   margin-bottom: 30px;
   font-family: var(--fontTitle);
-  font-weight: 400;
-  font-size: 2.4rem;
-  line-height: 2.9rem;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5rem;
 }
 .contactus-content {
   display: flex;
@@ -308,7 +307,7 @@ header .menu label {
 .form-container .form-control input::placeholder,
 .form-container .form-control textarea::placeholder {
   font-family: var(--fontBase);
-  color: var(--bg-card-main);
+  color: var(--bg-color-main);
   font-size: var(--font-caption);
   padding-left: 5px;
 }
@@ -368,7 +367,7 @@ header .menu label {
 }
 #about .card-container .card p {
   font-size: var(--font-caption);
-  line-height: 1.6rem;
+  line-height: 1.9rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -389,7 +388,7 @@ header .menu label {
     background-image: url("./../assets/images/aboutUs/ourVision.jpg");
   }
   #about .card-container2 {
-    background-image: url("./../assets/images/aboutUs/ourTeam.jpeg");
+    background-image: url("./../assets/images/aboutUs/ourTeam.jpg");
   }
   #about .card-container3 {
     background-image: url("./../assets/images/aboutUs/ourMission.jpg");
@@ -493,7 +492,7 @@ header .menu label {
 
 .portfolio-image {
   width: 100%;
-  height: 280px;
+  height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -501,12 +500,14 @@ header .menu label {
 
 .portfolio-image1 {
   background-image: url("./../assets/images/portfolio/watches.jpg");
+  background-position: 50%, 60%;
 }
 .portfolio-image2 {
   background-image: url("./../assets/images/portfolio/jewlery.jpg");
 }
 .portfolio-image3 {
   background-image: url("./../assets/images/portfolio/handbags.jpg");
+  background-position: top, center;
 }
 .portfolio-image4 {
   background-image: url("./../assets/images/portfolio/travelGear.jpg");
@@ -523,11 +524,11 @@ header .menu label {
   text-align: end;
 }
 .portfolio-description {
-  margin: 0 0 20px;
+  margin: 50px 0 10px;
 }
 @media screen and (min-width: 768px) {
   .portfolio-image {
-    height: 320px;
+    height: 50vh;
   }
 }
 
@@ -605,6 +606,5 @@ header .menu label {
 }
 #footer div:last-child {
   background-color: var(--bg-color2);
-  margin-top: 20px;
   padding: 20px;
 }
