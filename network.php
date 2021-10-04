@@ -6,16 +6,24 @@ include './components/header.php';
 
 <main>
   <section id="network">
-    <h1>NETWORK</h1>
+    <h1 class="title">NETWORK</h1>
     <hr/>
     <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.910440974647!2d-79.52242598627652!3d8.980388493554573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca8e3edc9e20d%3A0x7f7d590dc09caff!2sWorld%20Trade%20Center%20Panama!5e0!3m2!1ses-419!2sar!4v1633007095502!5m2!1ses-419!2sar"
-        width="100%"
-        height="450"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
+     <picture>
+                <source
+                  media="(max-width: 414px)"
+                  srcset="./assets/images/map/mobile/mapMobile.jpg"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/images/map/tablet/mapTablet.jpg"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="./assets/images/map/desktop/mapDesktop.jpg"
+                />
+                <img src="./assets/images/map/mobile/mapMobile.jpg" alt="Map">
+              </picture>
     </div>
     <div class="description-network">
       <p>

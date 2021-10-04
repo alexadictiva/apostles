@@ -6,7 +6,7 @@ include './components/header.php';
 
 <main>
   <section id="distribution">
-    <h1>DISTRIBUTION</h1>
+    <h1 class="title">DISTRIBUTION</h1>
     <hr>
     <div class="distribution-container">
       <div class="distribution-description-container">

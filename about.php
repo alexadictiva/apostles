@@ -5,7 +5,7 @@ include './components/header.php';
 ?>
 <main>
   <section id="about">
-    <h1>ABOUT</h1>
+    <h1 class="title">ABOUT</h1>
     <hr>
     <div class="about-cards-container">
       <article class="card-container card-container1">

@@ -5,7 +5,7 @@ include './components/header.php';
 ?>
 <main>
   <section id="portfolio">
-    <h1>PORTFOLIO</h1>
+    <h1 class="title">PORTFOLIO</h1>
     <hr />
     <div
       class="
