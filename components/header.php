@@ -1,5 +1,8 @@
 <div class="wrapper">
 <header>
+  <section class="brand">
+    <p>LOGO</p>
+  </section>
       <section class="menu">
         <label for="menuBotton" >
           <img src="./assets/icon/menuIcon.svg" />

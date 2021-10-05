@@ -249,6 +249,8 @@ include './components/header.php';
 ];
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtl7KXyLNeWMKPLtQ0QWqWXvlbuLEUvqQ&callback=initMap"></script>
+
+
 <?php
 include './components/footer.php';
 ?>

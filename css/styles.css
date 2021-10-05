@@ -88,6 +88,11 @@ header {
   height: 60px;
   position: fixed;
   z-index: 20;
+  display: flex;
+  align-items: center;
+}
+.brand {
+  padding-left: 20px;
 }
 .menu {
   height: 100%;
