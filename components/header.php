@@ -30,7 +30,7 @@
                 <a class="menuLink" href="./network.php">NETWORK</a>
               </li>
                <li class="menuItem">
-                <a class="menuLink" href="#contactus">CONTACT US</a>
+                <a class="menuLink" href="./index.php#contactus">CONTACT US</a>
               </li>
             </ul>
           </nav>

@@ -93,10 +93,11 @@ header {
 }
 .brand {
   padding-left: 20px;
+  width: 20%;
 }
 .menu {
   height: 100%;
-  width: 100%;
+  width: 80%;
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -363,12 +364,12 @@ header .menu label {
   gap: 20px;
 }
 .card-container-title {
-  background-color: var(--bg-intro);
+  background-color: var(--bg-color-card-about);
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -4px;
+  margin-top: -5px;
 }
 /*Portfolio*/
 #portfolio {
