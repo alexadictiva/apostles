@@ -16,36 +16,37 @@
     url("./../fonts/Raleway-Thin.woff2");
 }
 :root {
+  /*font properties*/
   font-size: 62.5%;
   --fontTitle: "Raleway";
   --fontBase: "Open Sans";
-  --font-color-main: #2e5776;
-  --font-color-menu: #0c3c60;
-  --font-color1: #ffffff;
-  --font-color2: #5f8099;
-  --font-color3: rgb(40, 68, 158);
-  --font-color4: #28449e;
+  --font-body: 1.8rem;
+  --font-caption: 1.5rem;
+  /*color properties*/
+  --white: #ffffff;
+  --black: #000000;
+  --color1: #2e5776;
+  --color2: #0c3c60;
+  --color3: #6ea4ca;
+  --color4: rgb(208, 208, 208);
   --overlay1: #ffffff50;
   --overlay2: #0c3c60bd;
-  --overlay: #0a177ea3;
-  --bg-main: #0c3c60;
-  --bg-intro: #2e5776;
-  --bg-card-main: #0c3c60;
-  --bg-contact-main: #2e5776;
-  --bg-color-footer: #0c3c60; /*azul oscuro*/
-  --bg-color-card-about: lightgrey;
-  --bg-btn: #6ea4ca;
-  --bg-color1: #ffffff;
 
-  --font-body: 1.6rem;
-  --font-caption: 1.3rem;
+  /* 
+  --color3: #5f8099; 
+  --color4: rgb(40, 68, 158);
+  --font-color3: rgb(40, 68, 158); 
+   --color4: #28449e;
+  --font-color4: #28449e;
+   --overlay: #0a177ea3; 
+   */
 }
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-size: var(--font-body);
   font-family: var(--fontBase);
-  color: var(--font-color-main);
+  color: var(--color1);
 }
 img {
   max-width: 100%;
@@ -74,7 +75,7 @@ main {
 hr {
   width: 100px;
   margin: 0 auto 30px;
-  border: var(--bg-card-main) 1px solid;
+  border: var(--color2) 1px solid;
 }
 h1 {
   font-size: 4rem;
@@ -83,7 +84,7 @@ h1 {
 /*Header*/
 
 header {
-  background-color: var(--bg-color1);
+  background-color: var(--white);
   width: 100%;
   height: 60px;
   position: fixed;
@@ -106,6 +107,7 @@ header {
 }
 
 header .menu label {
+  margin-top: 5px;
   padding-right: 30px;
   cursor: pointer;
 }
@@ -124,12 +126,12 @@ header .menu label {
 .menuContainer {
   height: 100vh;
   width: 50vw;
-  background-color: var(--bg-color1);
+  background-color: var(--white);
 }
 
 .menuDropdown {
   height: 100vh;
-  color: var(--bg-color3);
+  background-color: var(--color4);
 }
 
 .menuItem {
@@ -141,16 +143,17 @@ header .menu label {
 }
 
 .menuLink {
-  color: var(--font-color-menu);
+  color: var(--color2);
   transition: all 0.5s ease-in-out;
 }
 
 .menuItem:hover {
-  box-shadow: 768px 0 8px var(--bg-color4) inset;
+  box-shadow: 768px 0 8px var(--color1) inset;
+  color: var(--white);
 }
 
 .menuItem:hover > .menuLink {
-  color: var(--bg-color2);
+  color: var(--white);
 }
 
 .menu label img {
@@ -164,7 +167,7 @@ header .menu label {
 
 /*intro*/
 #intro {
-  background-color: var(--bg-intro);
+  background-color: var(--color1);
   height: 90vh;
   display: flex;
   align-items: center;
@@ -175,7 +178,7 @@ header .menu label {
   padding: 20px;
   text-align: center;
   font-family: var(--fontTitle);
-  color: var(--font-color1);
+  color: var(--white);
 }
 .intro-description-bolder {
   margin-bottom: 20px;
@@ -192,16 +195,17 @@ header .menu label {
 }
 /*card main view*/
 .cards-main-view {
-  background-color: var(--bg-color1);
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 .card-main {
-  background-color: var(--bg-card-main);
-  color: var(--font-color1);
+  background-color: var(--color2);
+  color: var(--white);
   padding: 60px 20px;
   text-align: center;
+  box-shadow: 1px 1px 8px var(--black);
 }
 .card-main h2 {
   font-family: var(--fontTitle);
@@ -212,10 +216,11 @@ header .menu label {
   margin-bottom: 30px;
 }
 .read-more-btn {
-  background-color: var(--bg-btn);
+  background-color: var(--color3);
   padding: 10px 20px;
-  color: var(--font-color1);
+  color: var(--white);
   font-size: var(--font-caption);
+  box-shadow: 1px 1px 8px var(--color4);
 }
 /*about main view*/
 .about-main-view {
@@ -229,7 +234,7 @@ header .menu label {
   background: var(--overlay2);
   padding: 60px 20px;
   text-align: center;
-  color: var(--font-color1);
+  color: var(--white);
 }
 
 .about-main-view .overlay h2 {
@@ -249,8 +254,8 @@ header .menu label {
 #contactus {
   padding: 40px 20px;
   text-align: center;
-  color: var(--font-color1);
-  background: var(--bg-contact-main);
+  color: var(--white);
+  background: var(--color1);
 }
 #contactus h2 {
   margin-bottom: 30px;
@@ -299,12 +304,13 @@ header .menu label {
 }
 
 .btn-sumbit {
-  background-color: var(--bg-btn);
+  background-color: var(--color3);
   padding: 10px 40px;
-  color: var(--font-color1);
+  color: var(--white);
   font-size: var(--font-caption);
   border: 0;
   outline: none;
+  box-shadow: 1px 1px 8px var(--color4);
 }
 #map {
   width: 100%;
@@ -322,18 +328,18 @@ header .menu label {
 }
 #about .card-container .card {
   padding: 20px;
-  background-color: var(--bg-color-card-about);
-  color: var(--font-color-menu);
+  background-color: var(--color4);
+  color: var(--color2);
 }
 #about .card-container .card h3 {
   font-size: 2rem;
   line-height: 3rem;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
 #about .card-container .card p {
   font-size: var(--font-caption);
-  line-height: 1.9rem;
+  line-height: 2.1rem;
 }
 
 /*distribution*/
@@ -363,8 +369,11 @@ header .menu label {
   flex-direction: column;
   gap: 20px;
 }
+.card-container {
+  box-shadow: 1px 1px 8px var(--black);
+}
 .card-container-title {
-  background-color: var(--bg-color-card-about);
+  background-color: var(--color4);
   height: 50px;
   display: flex;
   justify-content: center;
@@ -397,7 +406,7 @@ header .menu label {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  color: var(--bg-card-main);
+  color: var(--color2);
   padding: 10px 10px;
 }
 
@@ -455,26 +464,29 @@ header .menu label {
 .description-network {
   margin: 40px 0;
 }
+.description-network p {
+  line-height: 2.6rem;
+}
 .description-network p span {
   font-weight: bold;
 }
 .description-cloud-content {
   position: relative;
-  background: var(--bg-intro);
+  background: var(--color1);
   padding: 20px;
 }
 .description-cloud-content p {
   font-style: italic;
   position: relative;
   z-index: 10;
-  color: var(--font-color1);
+  color: var(--white);
 }
 .description-cloud-content::after {
   content: " ";
   position: absolute;
   bottom: -20px;
   left: calc(50% - 15px);
-  background: var(--bg-intro);
+  background: var(--color1);
   width: 40px;
   height: 40px;
   transform: rotate(45deg);
@@ -486,8 +498,8 @@ header .menu label {
 /*footer*/
 #footer {
   padding: 20px 0 0 0;
-  background-color: var(--bg-color-footer);
-  color: var(--font-color1);
+  background-color: var(--color2);
+  color: var(--white);
 }
 
 #footer div:first-child {
@@ -498,7 +510,7 @@ header .menu label {
   line-height: 2.1rem;
 }
 #footer div:last-child {
-  background-color: var(--bg-color2);
+  background-color: var(--color1);
   padding: 20px;
 }
 
@@ -545,8 +557,11 @@ header .menu label {
   .navContainer {
     position: static;
     top: 0;
+    width: 100%;
   }
+
   .menuDropdown {
+    background-color: var(--white);
     padding-right: 15px;
     display: flex;
     justify-content: flex-end;
@@ -554,12 +569,15 @@ header .menu label {
   }
   .menuContainer {
     height: 60px;
-    width: 100vw;
+    width: 100%;
     top: 0;
     background: transparent;
   }
   .menuItem {
     padding: 0 10px;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
   }
   .menuItem:hover {
     box-shadow: 100% 0 0 #ffffff inset;
@@ -577,8 +595,8 @@ header .menu label {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 650px;
-    max-width: 250px;
+    height: 700px;
+    max-width: 280px;
   }
 
   #about .card-container1 {
@@ -591,7 +609,7 @@ header .menu label {
     background-image: url("./../assets/images/aboutUs/ourMission.jpg");
   }
   #about .card-container .card {
-    color: var(--font-color1);
+    color: var(--white);
     background-color: var(--overlay2);
     height: 100%;
     width: 100%;
