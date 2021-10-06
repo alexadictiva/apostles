@@ -1,7 +1,7 @@
 <div class="wrapper">
 <header>
   <section class="brand">
-    <p>LOGO</p>
+    <a href="./index.php">LOGO</a>
   </section>
       <section class="menu">
         <label for="menuBotton" >
