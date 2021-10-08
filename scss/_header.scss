@@ -1,0 +1,104 @@
+/*Header*/
+
+header {
+  background-color: $white;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  @include desktop {
+    max-width: 1024px;
+  }
+  .brand {
+    padding-left: 20px;
+    width: 20%;
+  }
+}
+.menu {
+  height: 100%;
+  width: 80%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 10;
+  label {
+    margin-top: 5px;
+    padding-right: 30px;
+    cursor: pointer;
+    img {
+      width: 35px;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+  .menuBotton {
+    display: none;
+    &:checked ~ .navContainer {
+      right: 0;
+    }
+  }
+  .navContainer {
+    position: absolute;
+    top: 60px;
+    right: -600px;
+    transition: all 0.5s ease-out;
+    @include desktop {
+      position: static;
+      top: 0;
+      width: 100%;
+    }
+    .menuContainer {
+      height: 100vh;
+      width: 50vw;
+      background-color: $white;
+      @include desktop {
+        height: 60px;
+        width: 100%;
+        top: 0;
+        background: transparent;
+      }
+      .menuDropdown {
+        height: 100vh;
+        background-color: $color4;
+        @include desktop {
+          background-color: $white;
+          padding-right: 15px;
+          display: flex;
+          justify-content: flex-end;
+          height: 60px;
+        }
+        .menuItem {
+          font-size: 1.7rem;
+          line-height: 7rem;
+          padding: 0 0 0 30px;
+          transition: all 0.5s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            box-shadow: 768px 0 8px $color1 inset;
+            color: $white;
+          }
+          &:hover > .menuLink {
+            color: $white;
+          }
+          @include desktop {
+            padding: 0 10px;
+            line-height: 2rem;
+            display: flex;
+            align-items: center;
+            &:hover {
+              box-shadow: 100% 0 0 #ffffff inset;
+            }
+          }
+          .menuLink {
+            color: $color2;
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}

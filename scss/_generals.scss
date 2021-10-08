@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: $font-body;
+  font-family: $fontBase;
+  color: $color1;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+iframe {
+  border: 0;
+}
+.wrapper {
+  margin: auto;
+  max-width: 1024px;
+}
+main {
+  padding-top: 60px;
+}
+.title {
+  font-size: 4rem;
+}
+hr {
+  width: 100px;
+  margin: 0 auto 30px;
+  border: $color2 1px solid;
+}
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}

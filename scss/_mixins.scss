@@ -1,0 +1,21 @@
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin padding {
+  text-align: center;
+  padding: 40px 20px;
+}
+@mixin bgImages {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

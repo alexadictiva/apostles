@@ -1,0 +1,49 @@
+/*distribution*/
+#distribution {
+  @include padding;
+  .distribution-container {
+    display: flex;
+    flex-direction: column;
+    .distribution-description-container {
+      margin-bottom: 30px;
+      max-width: 1024px;
+      order: 1;
+      @include tablet {
+        margin: 30px auto 0;
+        order: 2;
+      }
+      p {
+        margin: auto;
+      }
+    }
+
+    .distribution-cards-container {
+      order: 2;
+      margin: auto;
+      max-width: 1024px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 20px;
+      @include tablet {
+        order: 1;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .card-container {
+        box-shadow: 1px 1px 8px $black;
+        @include tablet {
+          width: 300px;
+        }
+        .card-container-title {
+          background-color: $color4;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: -5px;
+        }
+      }
+    }
+  }
+}
