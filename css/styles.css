@@ -799,6 +799,7 @@ header .brand {
 
 #portfolio .swiper .swiper-slide .alignement div:first-child {
   width: 100%;
+  text-align: initial;
 }
 
 #portfolio .swiper .swiper-slide .alignement .swiper-pagination {
