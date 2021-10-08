@@ -1,0 +1,56 @@
+/*About*/
+
+#about {
+  @include padding;
+  .about-cards-container {
+    @include desktop {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+    article {
+      margin-bottom: 20px;
+      @include desktop {
+        @include bgImages;
+        height: 700px;
+        max-width: 280px;
+        &:hover > .card {
+          visibility: visible;
+        }
+        &:nth-child(1) {
+          background-image: url("./../assets/images/aboutUs/ourVision.jpg");
+        }
+        &:nth-child(2) {
+          background-image: url("./../assets/images/aboutUs/ourTeam.jpg");
+        }
+        &:nth-child(3) {
+          background-image: url("./../assets/images/aboutUs/ourMission.jpg");
+        }
+      }
+      .card {
+        padding: 20px;
+        background-color: $color4;
+        color: $color2;
+        @include desktop {
+          color: $white;
+          background-color: $overlay2;
+          height: 100%;
+          width: 100%;
+          padding: 60px 40px;
+          visibility: hidden;
+          transition: visibility 0.5s ease-in-out;
+        }
+        h3 {
+          font-size: 2rem;
+          line-height: 3rem;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: $font-caption;
+          line-height: 2.1rem;
+        }
+      }
+    }
+  }
+}

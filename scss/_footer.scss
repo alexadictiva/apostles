@@ -1,0 +1,17 @@
+/*footer*/
+#footer {
+  padding: 20px 0 0 0;
+  background-color: $color2;
+  color: $white;
+  div {
+    &:first-child {
+      padding: 20px;
+      p {
+        line-height: 2.1rem;
+      }
+    }
+    &:last-child {
+      padding: 20px;
+    }
+  }
+}

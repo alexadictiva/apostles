@@ -1,0 +1,42 @@
+/*network*/
+
+#network {
+  @include padding;
+  .description-network {
+    margin: 40px 0;
+    p {
+      line-height: 2.6rem;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  .description-cloud-container {
+    .description-cloud-content {
+      position: relative;
+      background: $color1;
+      padding: 20px;
+      p {
+        font-style: italic;
+        position: relative;
+        z-index: 10;
+        color: $white;
+      }
+      &::after {
+        content: " ";
+        position: absolute;
+        bottom: -20px;
+        left: calc(50% - 15px);
+        background-color: $color1;
+        width: 40px;
+        height: 40px;
+        transform: rotate(45deg);
+      }
+    }
+    .description-cloud-author {
+      p {
+        margin-top: 30px;
+      }
+    }
+  }
+}
