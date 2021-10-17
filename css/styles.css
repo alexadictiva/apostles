@@ -400,6 +400,10 @@ header .brand {
   margin-bottom: 30px;
 }
 
+#contactus .contactus-content .form-container #mailto {
+  visibility: hidden;
+}
+
 #contactus .contactus-content .form-container form .form-control {
   margin-bottom: 20px;
 }
@@ -443,6 +447,8 @@ header .brand {
 #contactus .contactus-content .form-container form .form-control textarea {
   width: 100%;
   padding-left: 5px;
+  padding-top: 5px;
+  outline: none;
 }
 
 #contactus .contactus-content .form-container form .form-control textarea::-webkit-input-placeholder {
@@ -450,7 +456,7 @@ header .brand {
   color: #2e5776;
   font-size: 1.5rem;
   padding-left: 5px;
-  padding-top: 5px;
+  padding-top: 3px;
 }
 
 #contactus .contactus-content .form-container form .form-control textarea:-ms-input-placeholder {
@@ -458,7 +464,7 @@ header .brand {
   color: #2e5776;
   font-size: 1.5rem;
   padding-left: 5px;
-  padding-top: 5px;
+  padding-top: 3px;
 }
 
 #contactus .contactus-content .form-container form .form-control textarea::-ms-input-placeholder {
@@ -466,7 +472,7 @@ header .brand {
   color: #2e5776;
   font-size: 1.5rem;
   padding-left: 5px;
-  padding-top: 5px;
+  padding-top: 3px;
 }
 
 #contactus .contactus-content .form-container form .form-control textarea::placeholder {
@@ -474,7 +480,7 @@ header .brand {
   color: #2e5776;
   font-size: 1.5rem;
   padding-left: 5px;
-  padding-top: 5px;
+  padding-top: 3px;
 }
 
 #contactus .contactus-content .form-container form .btn-sumbit {

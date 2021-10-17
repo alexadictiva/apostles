@@ -124,6 +124,9 @@
           margin-bottom: 30px;
         }
       }
+      #mailto {
+        visibility: hidden;
+      }
       form {
         .form-control {
           margin-bottom: 20px;
@@ -143,12 +146,14 @@
           textarea {
             width: 100%;
             padding-left: 5px;
+            padding-top: 5px;
+            outline: none;
             &::placeholder {
               font-family: $fontBase;
               color: $color1;
               font-size: $font-caption;
               padding-left: 5px;
-              padding-top: 5px;
+              padding-top: 3px;
             }
           }
         }

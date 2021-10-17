@@ -75,7 +75,7 @@ include './components/header.php';
           For more information, complete the following form and we will contact
           you shortly.
         </p>
-        <form action="POST">
+        <form action="POST" id="form">
           <div class="form-control">
             <input type="text" placeholder="Name" id="name" name="name" />
           </div>
@@ -101,154 +101,43 @@ include './components/header.php';
           </div>
           <button type="submit" class="btn-sumbit">Submit</button>
         </form>
+        <a id="mailto" href="mailto:nicolewaingarten@nihebal.com.ar">MAIL</a>
       </div>
       <div class="contactus-description">
         <div class="map-container">
-          <section id="map"></section>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.9103833789372!2d-79.52242598569356!3d8.98039379222216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca8e3edc9e20d%3A0x7f7d590dc09caff!2sWorld%20Trade%20Center%20Panama!5e0!3m2!1ses-419!2sar!4v1634491759669!5m2!1ses-419!2sar"  loading="lazy" id="map"></iframe>
         </div>
       </div>
     </div>
   </section>
 </main>
-
 <script>
-  // Google maps
-  function initMap() {
-    const zoom = 16.8;
-    const src = "./assets/icon/marker.svg";
-    const lat = "8.9801229";
-    const lng = "-79.5204547";
-    const url = "https://goo.gl/maps/QJ6FPPMYhuJdxL6u5";
-    const center = {
-      lat: parseFloat(lat),
-      lng: parseFloat(lng),
-    };
-    const bounds = new google.maps.LatLngBounds();
-    const map = new google.maps.Map(document.getElementById("map"), {
-      styles,
-      zoom,
-      center,
-      gestureHandling: "cooperative",
-      disableDefaultUI: true,
-      zoomControl: true,
-      mapTypeControl: false,
-      scaleControl: false,
-      streetViewControl: false,
-      rotateControl: false,
-      fullscreenControl: true,
-    });
+/*Form*/
 
-    const latLng = new google.maps.LatLng(lat, lng);
-    const marker = new google.maps.Marker({
-      position: latLng,
-      map,
-      icon: src,
-    });
+const form = document
+  .querySelector("#form")
+  .addEventListener("submit", handleSubmit);
+const mailto = document.querySelector("#mailto");
 
-    google.maps.event.addListener(marker, "click", function () {
-      window.open(url);
-    });
+function handleSubmit(event) {
+  event.preventDefault();
 
-    bounds.extend(latLng);
+  const formulario = new FormData(this);
+  console.log(formulario.get("name"));
+  console.log(formulario.get("email"));
+  console.log(formulario.get("subject"));
+  console.log(formulario.get("message"));
 
-    // Marker to fit zoom
-    map.panTo(center);
-  }
+  mailto.setAttribute(
+    "href", `mailto:academiatrucking@gmail.com?subject=${formulario.get("name")}, ${formulario.get("subject")}&body=${formulario.get("email")}, <br/> ${formulario.get("message")}`
+  );
 
-  const styles = [
-    {
-        "featureType": "administrative",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "lightness": 33
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "all",
-        "stylers": [
-            {
-                "color": "#f2e5d4"
-            }
-        ]
-    },
-    {
-        "featureType": "poi.park",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#c5dac6"
-            }
-        ]
-    },
-    {
-        "featureType": "poi.park",
-        "elementType": "labels",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "lightness": 20
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "all",
-        "stylers": [
-            {
-                "lightness": 20
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#c5c6c6"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#e4d7c6"
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#fbfaf7"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "color": "#acbcc9"
-            }
-        ]
-    }
-];
+  mailto.click();
+}
+
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtl7KXyLNeWMKPLtQ0QWqWXvlbuLEUvqQ&callback=initMap"></script>
+
+
 
 
 <?php
