@@ -18,9 +18,7 @@
   
 </footer>
 </div>
-    <script >
-      console.log("si funciona");
-    </script>
+  
   </body>
 </html>
 

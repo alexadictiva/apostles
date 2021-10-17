@@ -141,12 +141,7 @@ include './components/header.php';
     event.preventDefault();
 
     const formulario = new FormData(this);
-    console.log(formulario.get("name"));
-    console.log(formulario.get("email"));
-    console.log(formulario.get("subject"));
-    console.log(formulario.get("message"));
-
-    mailto.setAttribute(
+     mailto.setAttribute(
       "href",
       `mailto:academiatrucking@gmail.com?subject=${formulario.get(
         "name"
