@@ -77,10 +77,22 @@ include './components/header.php';
         </p>
         <form action="POST" id="form">
           <div class="form-control">
-            <input type="text" placeholder="Name" id="name" name="name" />
+            <input
+              type="text"
+              placeholder="Name"
+              id="name"
+              name="name"
+              required
+            />
           </div>
           <div class="form-control">
-            <input type="mail" placeholder="Email" id="email" name="email" />
+            <input
+              type="mail"
+              placeholder="Email"
+              id="email"
+              name="email"
+              required
+            />
           </div>
           <div class="form-control">
             <input
@@ -88,6 +100,7 @@ include './components/header.php';
               placeholder="Subject"
               id="subject"
               name="subject"
+              required
             />
           </div>
           <div class="form-control">
@@ -97,6 +110,7 @@ include './components/header.php';
               cols="30"
               placeholder="Type your message here..."
               rows="10"
+              required
             ></textarea>
           </div>
           <button type="submit" class="btn-sumbit">Submit</button>
@@ -105,40 +119,45 @@ include './components/header.php';
       </div>
       <div class="contactus-description">
         <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.9103833789372!2d-79.52242598569356!3d8.98039379222216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca8e3edc9e20d%3A0x7f7d590dc09caff!2sWorld%20Trade%20Center%20Panama!5e0!3m2!1ses-419!2sar!4v1634491759669!5m2!1ses-419!2sar"  loading="lazy" id="map"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.9103833789372!2d-79.52242598569356!3d8.98039379222216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca8e3edc9e20d%3A0x7f7d590dc09caff!2sWorld%20Trade%20Center%20Panama!5e0!3m2!1ses-419!2sar!4v1634491759669!5m2!1ses-419!2sar"
+            loading="lazy"
+            id="map"
+          ></iframe>
         </div>
       </div>
     </div>
   </section>
 </main>
 <script>
-/*Form*/
+  /*Form*/
 
-const form = document
-  .querySelector("#form")
-  .addEventListener("submit", handleSubmit);
-const mailto = document.querySelector("#mailto");
+  const form = document
+    .querySelector("#form")
+    .addEventListener("submit", handleSubmit);
+  const mailto = document.querySelector("#mailto");
 
-function handleSubmit(event) {
-  event.preventDefault();
+  function handleSubmit(event) {
+    event.preventDefault();
 
-  const formulario = new FormData(this);
-  console.log(formulario.get("name"));
-  console.log(formulario.get("email"));
-  console.log(formulario.get("subject"));
-  console.log(formulario.get("message"));
+    const formulario = new FormData(this);
+    console.log(formulario.get("name"));
+    console.log(formulario.get("email"));
+    console.log(formulario.get("subject"));
+    console.log(formulario.get("message"));
 
-  mailto.setAttribute(
-    "href", `mailto:academiatrucking@gmail.com?subject=${formulario.get("name")}, ${formulario.get("subject")}&body=${formulario.get("email")}, <br/> ${formulario.get("message")}`
-  );
+    mailto.setAttribute(
+      "href",
+      `mailto:academiatrucking@gmail.com?subject=${formulario.get(
+        "name"
+      )}, ${formulario.get("subject")}&body=${formulario.get(
+        "email"
+      )}, ${formulario.get("message")}`
+    );
 
-  mailto.click();
-}
-
+    mailto.click();
+  }
 </script>
-
-
-
 
 <?php
 include './components/footer.php';
