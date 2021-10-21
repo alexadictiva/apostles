@@ -15,6 +15,7 @@
     color: $white;
     .intro-description-bolder {
       margin-bottom: 20px;
+      letter-spacing: 0.05em;
       p {
         font-weight: 700;
         font-size: 1.7rem;
@@ -36,6 +37,8 @@
   background-color: $white;
   display: flex;
   flex-direction: column;
+  max-width: 1366px;
+  margin: auto;
   gap: 20px;
   @include desktop {
     padding: 60px 40px;
@@ -54,6 +57,8 @@
     }
     p {
       margin-bottom: 30px;
+      font-size: 1.5rem;
+      line-height: 2.2rem;
     }
   }
   .read-more-btn {
@@ -61,15 +66,11 @@
     padding: 10px 20px;
     color: $white;
     font-size: $font-caption;
-    box-shadow: 1px 1px 8px $color4;
   }
 }
 /*about main view*/
 .about-main-view {
   margin: 20px 0;
-  @include bgImages;
-  background-image: url("./../assets/images/aboutUs/ourVision.jpg");
-
   .overlay {
     background-color: $overlay2;
     padding: 60px 20px;
@@ -84,9 +85,19 @@
     }
     p {
       max-width: 768px;
-      margin: 0 auto 30px;
+      margin: 0 auto 70px;
+      font-size: 1.5rem;
+      line-height: 2.2rem;
+    }
+    a {
+      background-color: #6ea4ca;
+      padding: 10px 20px;
+      color: #ffffff;
+      font-size: 1.5rem;
     }
   }
+  @include bgImages;
+  background-image: url("./../assets/images/aboutUs/ourVision.jpg");
 }
 
 /*contact us main view*/
@@ -104,6 +115,8 @@
     line-height: 5rem;
   }
   .contactus-content {
+    max-width: 1024px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -164,7 +177,6 @@
           font-size: $font-caption;
           border: 0;
           outline: none;
-          box-shadow: 1px 1px 8px $color4;
         }
       }
     }

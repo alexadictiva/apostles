@@ -23,15 +23,20 @@
       max-width: 1024px;
       display: flex;
       flex-wrap: wrap;
-      flex-direction: column;
-      gap: 20px;
+      /*flex-direction: column;*/
+      justify-content: center;
+      gap: 10px;
+
       @include tablet {
         order: 1;
         flex-direction: row;
         justify-content: center;
       }
       .card-container {
-        box-shadow: 1px 1px 8px $black;
+        box-shadow: 1px 1px 8px $overlay1;
+        min-width: 160px;
+        max-width: 280px;
+        width: 160px;
         @include tablet {
           width: 300px;
         }
@@ -42,6 +47,9 @@
           justify-content: center;
           align-items: center;
           margin-top: -5px;
+          h3 {
+            font: $font_7;
+          }
         }
       }
     }

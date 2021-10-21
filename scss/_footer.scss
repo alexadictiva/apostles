@@ -1,17 +1,21 @@
 /*footer*/
 #footer {
-  padding: 20px 0 0 0;
+  padding: 10px 0 0 0;
   background-color: $color2;
   color: $white;
+  font-size: 1.5rem;
   div {
     &:first-child {
-      padding: 20px;
+      padding: 20px 20px 0;
       p {
         line-height: 2.1rem;
       }
     }
     &:last-child {
-      padding: 20px;
+      padding: 0 20px 20px;
+      @include desktop {
+        padding: 20px;
+      }
     }
   }
 }

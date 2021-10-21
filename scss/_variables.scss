@@ -6,12 +6,27 @@ $fontTitle: "Raleway";
 $fontBase: "Open Sans";
 $font-body: 1.8rem;
 $font-caption: 1.5rem;
+/*Font System*/
+$font_0: normal normal normal 20.46px/1.4em $fontTitle, sans-serif;
+$font_1: normal normal normal 14.88px/1.2em Arial, "ms pgothic", helvetica,
+  sans-serif;
+$font_2: normal normal normal 37.2px/1.4em $fontTitle, sans-serif;
+$font_3: normal normal normal 34.410000000000004px/1.4em $fontTitle, sans-serif;
+$font_4: normal normal normal 27.900000000000002px/1.4em $fontTitle, sans-serif;
+$font_5: normal normal normal 22.32px/1.4em $fontTitle, sans-serif;
+$font_6: normal normal normal 16.740000000000002px/1.4em $fontTitle, sans-serif;
+$font_7: normal normal normal 14.88px/1.4em $fontBase, sans-serif;
+$font_8: normal normal normal 13.950000000000001px/1.4em $fontBase, sans-serif;
+$font_9: normal normal normal 12.09px/1.4em $fontBase, sans-serif;
+$font_10: normal normal normal 11.16px/1.2em Arial, "ms pgothic", helvetica,
+  sans-serif;
 /*color properties*/
 $white: #ffffff;
 $black: #000000;
 $color1: #2e5776;
 $color2: #0c3c60;
 $color3: #6ea4ca;
-$color4: rgb(208, 208, 208);
+$color4: #f2f5f7;
+$color5: #dbdbdb;
 $overlay1: #ffffff50;
 $overlay2: #0c3c60bd;

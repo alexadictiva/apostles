@@ -12,7 +12,7 @@
   </div>
   <div>
     <p>
-      © 2021 GRINDEL ASSOCIATED CORP.
+      © 2021 The Twelve Apostles Inc.
     </p>
   </div>
   
