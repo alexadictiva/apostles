@@ -541,7 +541,13 @@ header .brand {
 
 #contactus .contactus-content .contactus-description #map {
   width: 100%;
-  height: 440px;
+  height: 340px;
+}
+
+@media (min-width: 1024px) {
+  #contactus .contactus-content .contactus-description #map {
+    height: 440px;
+  }
 }
 
 /*About*/
