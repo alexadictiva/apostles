@@ -9,7 +9,7 @@
   .intro-container {
     width: 100%;
     background-color: $overlay1;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
     font-family: $fontTitle;
     color: $white;
@@ -18,8 +18,8 @@
       letter-spacing: 0.05em;
       p {
         font-weight: 700;
-        font-size: 1.7rem;
-        line-height: 2rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
       }
     }
 
@@ -47,25 +47,26 @@
   .card-main {
     background-color: $color2;
     color: $white;
-    padding: 60px 20px;
+    padding: 60px 40px;
     text-align: center;
     box-shadow: 1px 1px 8px $black;
     h2 {
       font-family: $fontTitle;
+      font-size: 3rem;
       font-weight: 400;
       margin-bottom: 20px;
     }
     p {
       margin-bottom: 30px;
-      font-size: 1.5rem;
-      line-height: 2.2rem;
+      font-size: 1.9rem;
+      line-height: 2.6rem;
     }
   }
   .read-more-btn {
     background-color: $color3;
-    padding: 10px 20px;
+    padding: 12px 30px;
     color: $white;
-    font-size: $font-caption;
+    font-size: 1.9rem;
   }
 }
 /*about main view*/
@@ -73,7 +74,7 @@
   margin: 20px 0;
   .overlay {
     background-color: $overlay2;
-    padding: 60px 20px;
+    padding: 60px 40px;
     text-align: center;
     color: $white;
     h2 {
@@ -86,14 +87,14 @@
     p {
       max-width: 768px;
       margin: 0 auto 70px;
-      font-size: 1.5rem;
-      line-height: 2.2rem;
+      font-size: 1.9rem;
+      line-height: 2.6rem;
     }
     a {
-      background-color: #6ea4ca;
-      padding: 10px 20px;
-      color: #ffffff;
-      font-size: 1.5rem;
+      background-color: $color3;
+      padding: 12px 30px;
+      color: $white;
+      font-size: 1.9rem;
     }
   }
   @include bgImages;
@@ -134,18 +135,26 @@
       p {
         &:nth-child(1) {
           margin: 0 0 10px;
+          font-size: 1.9rem;
+          line-height: 2.6rem;
         }
         &:nth-child(2) {
           text-align: left;
           margin-bottom: 10px;
+          margin-top: 20px;
+          font-size: 1.5rem;
+          line-height: 2rem;
         }
       }
       #mailto {
         visibility: hidden;
       }
       form {
+        @include desktop {
+          text-align: right;
+        }
         .form-control {
-          margin-bottom: 5px;
+          margin-bottom: 7px;
           input {
             width: 100%;
             padding-left: 10px;
@@ -161,7 +170,7 @@
           }
           textarea {
             width: 100%;
-            height: 150px;
+            height: 130px;
             padding-left: 5px;
             padding-top: 5px;
             outline: none;
@@ -175,12 +184,17 @@
           }
         }
         .btn-sumbit {
-          background-color: $color3;
-          padding: 10px 40px;
-          color: $white;
-          font-size: $font-caption;
           border: 0;
           outline: none;
+          background-color: $color3;
+          padding: 12px 30px;
+          color: $white;
+          font-size: 1.9rem;
+          width: 100%;
+          @include desktop {
+            width: 40%;
+            padding: 5px 10px;
+          }
         }
       }
     }

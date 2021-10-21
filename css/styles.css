@@ -5,7 +5,10 @@
 
 @font-face {
   font-family: "Raleway";
-  src: url("./../fonts/Raleway-Thin.ttf"), url("./../fonts/Raleway-Thin.woff"), url("./../fonts/Raleway-Thin.woff2");
+  src: url("./../fonts/Raleway-Thin.woff2") format("woff2"), url("./../fonts/Raleway-Thin.woff") format("woff"), url("./../fonts/Raleway-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
@@ -49,15 +52,8 @@ iframe {
 
 .wrapper {
   margin: auto;
-  /*max-width: 1366px;*/
 }
 
-/* main {
-  padding-top: 180px;
-  @include desktop {
-    padding-top: 90px;
-  }
-} */
 .title {
   font-size: 4rem;
 }
@@ -261,7 +257,7 @@ header .brand {
 #intro .intro-container {
   width: 100%;
   background-color: #ffffff50;
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
   font-family: "Raleway";
   color: #ffffff;
@@ -274,8 +270,8 @@ header .brand {
 
 #intro .intro-container .intro-description-bolder p {
   font-weight: 700;
-  font-size: 1.7rem;
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
 #intro .intro-container .intro-description-normal h1 {
@@ -312,7 +308,7 @@ header .brand {
 .cards-main-view .card-main {
   background-color: #0c3c60;
   color: #ffffff;
-  padding: 60px 20px;
+  padding: 60px 40px;
   text-align: center;
   -webkit-box-shadow: 1px 1px 8px #000000;
           box-shadow: 1px 1px 8px #000000;
@@ -320,21 +316,22 @@ header .brand {
 
 .cards-main-view .card-main h2 {
   font-family: "Raleway";
+  font-size: 3rem;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
 .cards-main-view .card-main p {
   margin-bottom: 30px;
-  font-size: 1.5rem;
-  line-height: 2.2rem;
+  font-size: 1.9rem;
+  line-height: 2.6rem;
 }
 
 .cards-main-view .read-more-btn {
   background-color: #6ea4ca;
-  padding: 10px 20px;
+  padding: 12px 30px;
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
 }
 
 /*about main view*/
@@ -348,7 +345,7 @@ header .brand {
 
 .about-main-view .overlay {
   background-color: #0c3c60bd;
-  padding: 60px 20px;
+  padding: 60px 40px;
   text-align: center;
   color: #ffffff;
 }
@@ -364,15 +361,15 @@ header .brand {
 .about-main-view .overlay p {
   max-width: 768px;
   margin: 0 auto 70px;
-  font-size: 1.5rem;
-  line-height: 2.2rem;
+  font-size: 1.9rem;
+  line-height: 2.6rem;
 }
 
 .about-main-view .overlay a {
   background-color: #6ea4ca;
-  padding: 10px 20px;
+  padding: 12px 30px;
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
 }
 
 /*contact us main view*/
@@ -430,19 +427,30 @@ header .brand {
 
 #contactus .contactus-content .form-container p:nth-child(1) {
   margin: 0 0 10px;
+  font-size: 1.9rem;
+  line-height: 2.6rem;
 }
 
 #contactus .contactus-content .form-container p:nth-child(2) {
   text-align: left;
   margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 #contactus .contactus-content .form-container #mailto {
   visibility: hidden;
 }
 
+@media (min-width: 1024px) {
+  #contactus .contactus-content .form-container form {
+    text-align: right;
+  }
+}
+
 #contactus .contactus-content .form-container form .form-control {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 #contactus .contactus-content .form-container form .form-control input {
@@ -483,7 +491,7 @@ header .brand {
 
 #contactus .contactus-content .form-container form .form-control textarea {
   width: 100%;
-  height: 150px;
+  height: 130px;
   padding-left: 5px;
   padding-top: 5px;
   outline: none;
@@ -522,12 +530,20 @@ header .brand {
 }
 
 #contactus .contactus-content .form-container form .btn-sumbit {
-  background-color: #6ea4ca;
-  padding: 10px 40px;
-  color: #ffffff;
-  font-size: 1.5rem;
   border: 0;
   outline: none;
+  background-color: #6ea4ca;
+  padding: 12px 30px;
+  color: #ffffff;
+  font-size: 1.9rem;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  #contactus .contactus-content .form-container form .btn-sumbit {
+    width: 40%;
+    padding: 5px 10px;
+  }
 }
 
 @media (min-width: 768px) {

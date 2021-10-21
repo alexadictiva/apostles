@@ -6,6 +6,10 @@
 }
 @font-face {
   font-family: "Raleway";
-  src: url("./../fonts/Raleway-Thin.ttf"), url("./../fonts/Raleway-Thin.woff"),
-    url("./../fonts/Raleway-Thin.woff2");
+  src: url("./../fonts/Raleway-Thin.woff2") format("woff2"),
+    url("./../fonts/Raleway-Thin.woff") format("woff"),
+    url("./../fonts/Raleway-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
