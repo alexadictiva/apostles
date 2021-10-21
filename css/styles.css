@@ -52,16 +52,12 @@ iframe {
   /*max-width: 1366px;*/
 }
 
-main {
+/* main {
   padding-top: 180px;
-}
-
-@media (min-width: 1024px) {
-  main {
+  @include desktop {
     padding-top: 90px;
   }
-}
-
+} */
 .title {
   font-size: 4rem;
 }
@@ -82,8 +78,8 @@ header {
   background-color: #ffffff;
   width: 100%;
   height: 180px;
-  position: fixed;
-  z-index: 20;
+  /* position: fixed;
+  z-index: 20; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,13 +422,19 @@ header .brand {
   }
 }
 
+@media (min-width: 1024px) {
+  #contactus .contactus-content .form-container {
+    padding: 0 40px;
+  }
+}
+
 #contactus .contactus-content .form-container p:nth-child(1) {
-  margin: 0 0 30px;
+  margin: 0 0 10px;
 }
 
 #contactus .contactus-content .form-container p:nth-child(2) {
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #contactus .contactus-content .form-container #mailto {
@@ -440,15 +442,15 @@ header .brand {
 }
 
 #contactus .contactus-content .form-container form .form-control {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 #contactus .contactus-content .form-container form .form-control input {
   width: 100%;
-  padding-left: 5px;
+  padding-left: 10px;
   border: 0;
   outline: none;
-  height: 40px;
+  height: 30px;
 }
 
 #contactus .contactus-content .form-container form .form-control input::-webkit-input-placeholder {
@@ -481,6 +483,7 @@ header .brand {
 
 #contactus .contactus-content .form-container form .form-control textarea {
   width: 100%;
+  height: 150px;
   padding-left: 5px;
   padding-top: 5px;
   outline: none;
@@ -538,7 +541,7 @@ header .brand {
 
 #contactus .contactus-content .contactus-description #map {
   width: 100%;
-  height: 580px;
+  height: 440px;
 }
 
 /*About*/
