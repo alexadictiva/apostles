@@ -40,6 +40,7 @@ include './components/header.php';
                 swiper-pagination-horizontal
               "
             >
+               
               <span class="swiper-pagination-current"> 1</span> /
               <span class="swiper-pagination-total">6</span>
             </div>
@@ -182,6 +183,10 @@ include './components/header.php';
         </div>
         <!-- Finish Image6 -->
       </div>
+      <!-- inicio flechas -->
+      <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-fda3f4823a8469d6" aria-disabled="false"></div>
+      <div class="swiper-button-prev" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-fda3f4823a8469d6" aria-disabled="true"></div>
+      <!-- fin flechas -->
     </div>
     <div class="portfolio-description">
       <p>

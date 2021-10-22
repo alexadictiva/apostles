@@ -4,17 +4,25 @@
   background-color: $color2;
   color: $white;
   font-size: 1.7rem;
+  @include desktop {
+    font-size: 1.3rem;
+  }
   div {
+    max-width: 930px;
+    margin: auto;
     &:first-child {
       padding: 20px 20px 0;
       p {
         line-height: 2.1rem;
+        @include desktop {
+          line-height: 1.8rem;
+        }
       }
     }
     &:last-child {
       padding: 15px 20px 20px;
       @include desktop {
-        padding: 20px;
+        padding: 5px 20px 20px 20px;
       }
     }
   }

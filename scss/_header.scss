@@ -4,11 +4,11 @@ header {
   background-color: $white;
   width: 100%;
   height: 180px;
-  /* position: fixed;
-  z-index: 20; */
+  max-width: 1024px;
   display: flex;
   align-items: center;
   @include desktop {
+    margin: auto;
     height: 90px;
   }
   .brand {

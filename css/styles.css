@@ -74,8 +74,7 @@ header {
   background-color: #ffffff;
   width: 100%;
   height: 180px;
-  /* position: fixed;
-  z-index: 20; */
+  max-width: 1024px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,6 +85,7 @@ header {
 
 @media (min-width: 1024px) {
   header {
+    margin: auto;
     height: 90px;
   }
 }
@@ -302,6 +302,10 @@ header .brand {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 35px;
   }
 }
 
@@ -310,6 +314,12 @@ header .brand {
   color: #ffffff;
   padding: 60px 40px;
   text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .cards-main-view .card-main {
+    width: 320px;
+  }
 }
 
 .cards-main-view .card-main h2 {
@@ -356,6 +366,12 @@ header .brand {
   font-weight: 700;
 }
 
+@media (min-width: 1024px) {
+  .about-main-view .overlay h2 {
+    font-size: 4.5rem;
+  }
+}
+
 .about-main-view .overlay p {
   max-width: 768px;
   margin: 0 auto 90px;
@@ -384,6 +400,12 @@ header .brand {
   font-weight: 700;
   font-size: 3.5rem;
   line-height: 5rem;
+}
+
+@media (min-width: 1024px) {
+  #contactus h2 {
+    font-size: 4.5rem;
+  }
 }
 
 #contactus .contactus-content {
@@ -419,7 +441,7 @@ header .brand {
 
 @media (min-width: 1024px) {
   #contactus .contactus-content .form-container {
-    padding: 0 40px;
+    padding: 0 60px;
   }
 }
 
@@ -448,7 +470,7 @@ header .brand {
 }
 
 #contactus .contactus-content .form-container form .form-control {
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
 
 #contactus .contactus-content .form-container form .form-control input {
@@ -456,7 +478,7 @@ header .brand {
   padding-left: 10px;
   border: 0;
   outline: none;
-  height: 30px;
+  height: 28px;
 }
 
 #contactus .contactus-content .form-container form .form-control input::-webkit-input-placeholder {
@@ -489,7 +511,7 @@ header .brand {
 
 #contactus .contactus-content .form-container form .form-control textarea {
   width: 100%;
-  height: 130px;
+  height: 125px;
   padding-left: 5px;
   padding-top: 5px;
   outline: none;
@@ -726,7 +748,7 @@ header .brand {
 }
 
 #distribution .distribution-container .distribution-cards-container .card-container .card-container-title {
-  background-color: #f2f5f7;
+  background-color: #d1e0eb;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -792,6 +814,8 @@ header .brand {
 }
 
 #portfolio {
+  max-width: 1024px;
+  margin: auto;
   text-align: center;
   padding: 40px 20px;
 }
@@ -799,6 +823,30 @@ header .brand {
 #portfolio .swiper {
   width: 100%;
   height: 100%;
+}
+
+#portfolio .swiper .swiper-button-next {
+  top: auto;
+  right: 0;
+  bottom: 70px;
+}
+
+@media (min-width: 1024px) {
+  #portfolio .swiper .swiper-button-next {
+    bottom: 24px;
+  }
+}
+
+#portfolio .swiper .swiper-button-prev {
+  right: 45px;
+  bottom: 70px;
+  top: auto;
+}
+
+@media (min-width: 1024px) {
+  #portfolio .swiper .swiper-button-prev {
+    bottom: 24px;
+  }
 }
 
 #portfolio .swiper .swiper-slide {
@@ -876,6 +924,7 @@ header .brand {
 #portfolio .swiper .swiper-slide .alignement .swiper-pagination {
   position: static;
   text-align: end;
+  padding-right: 15px;
 }
 
 #portfolio .portfolio-description {
@@ -896,6 +945,17 @@ header .brand {
   font-size: 1.7rem;
 }
 
+@media (min-width: 1024px) {
+  #footer {
+    font-size: 1.3rem;
+  }
+}
+
+#footer div {
+  max-width: 930px;
+  margin: auto;
+}
+
 #footer div:first-child {
   padding: 20px 20px 0;
 }
@@ -904,13 +964,19 @@ header .brand {
   line-height: 2.1rem;
 }
 
+@media (min-width: 1024px) {
+  #footer div:first-child p {
+    line-height: 1.8rem;
+  }
+}
+
 #footer div:last-child {
   padding: 15px 20px 20px;
 }
 
 @media (min-width: 1024px) {
   #footer div:last-child {
-    padding: 20px;
+    padding: 5px 20px 20px 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

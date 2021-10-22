@@ -1,12 +1,31 @@
 #portfolio {
+  max-width: 1024px;
+  margin: auto;
   @include padding;
   .swiper {
     width: 100%;
     height: 100%;
+    .swiper-button-next {
+      top: auto;
+      right: 0;
+      bottom: 70px;
+      @include desktop {
+        bottom: 24px;
+      }
+    }
+    .swiper-button-prev {
+      right: 45px;
+      bottom: 70px;
+      top: auto;
+      @include desktop {
+        bottom: 24px;
+      }
+    }
     .swiper-slide {
       display: block;
       justify-content: center;
       align-items: center;
+
       .portfolio-image {
         width: 100%;
         height: 30vh;
@@ -52,6 +71,7 @@
         .swiper-pagination {
           position: static;
           text-align: end;
+          padding-right: 15px;
         }
       }
     }
