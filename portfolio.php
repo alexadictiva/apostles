@@ -184,8 +184,8 @@ include './components/header.php';
         <!-- Finish Image6 -->
       </div>
       <!-- inicio flechas -->
-      <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-fda3f4823a8469d6" aria-disabled="false"></div>
-      <div class="swiper-button-prev" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-fda3f4823a8469d6" aria-disabled="true"></div>
+      <div class="arrow-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-fda3f4823a8469d6" aria-disabled="false"> <img src="./assets/icon/arrow-next.svg" alt=""> </div>
+      <div class="arrow-back" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-fda3f4823a8469d6" aria-disabled="true"><img src="./assets/icon/arrow-back.svg" alt=""></div>
       <!-- fin flechas -->
     </div>
     <div class="portfolio-description">
@@ -214,8 +214,8 @@ include './components/header.php';
       type: "fraction",
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".arrow-next",
+      prevEl: ".arrow-back",
     },
   });
 </script>

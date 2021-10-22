@@ -825,26 +825,15 @@ header .brand {
   height: 100%;
 }
 
-#portfolio .swiper .swiper-button-next {
+#portfolio .swiper .arrow-next {
+  position: absolute;
   top: auto;
   right: 0;
   bottom: 70px;
 }
 
 @media (min-width: 1024px) {
-  #portfolio .swiper .swiper-button-next {
-    bottom: 24px;
-  }
-}
-
-#portfolio .swiper .swiper-button-prev {
-  right: 45px;
-  bottom: 70px;
-  top: auto;
-}
-
-@media (min-width: 1024px) {
-  #portfolio .swiper .swiper-button-prev {
+  #portfolio .swiper .arrow-next {
     bottom: 24px;
   }
 }
@@ -934,6 +923,22 @@ header .brand {
 @media (min-width: 768px) {
   #portfolio .portfolio-description {
     margin: 50px 0 10px;
+  }
+}
+
+.arrow-back {
+  position: absolute;
+  bottom: 80px;
+  right: 70px;
+}
+
+.arrow-back:after {
+  content: "prev";
+}
+
+@media (min-width: 1024px) {
+  .arrow-back {
+    bottom: 24px;
   }
 }
 
