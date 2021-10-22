@@ -826,15 +826,40 @@ header .brand {
 }
 
 #portfolio .swiper .arrow-next {
+  cursor: pointer;
   position: absolute;
-  top: auto;
   right: 0;
-  bottom: 70px;
+  bottom: 100px;
+}
+
+@media (min-width: 768px) {
+  #portfolio .swiper .arrow-next {
+    bottom: 52px;
+  }
 }
 
 @media (min-width: 1024px) {
   #portfolio .swiper .arrow-next {
-    bottom: 24px;
+    bottom: 28px;
+  }
+}
+
+#portfolio .swiper .arrow-back {
+  cursor: pointer;
+  position: absolute;
+  bottom: 100px;
+  right: 60px;
+}
+
+@media (min-width: 768px) {
+  #portfolio .swiper .arrow-back {
+    bottom: 52px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #portfolio .swiper .arrow-back {
+    bottom: 28px;
   }
 }
 
@@ -923,22 +948,6 @@ header .brand {
 @media (min-width: 768px) {
   #portfolio .portfolio-description {
     margin: 50px 0 10px;
-  }
-}
-
-.arrow-back {
-  position: absolute;
-  bottom: 80px;
-  right: 70px;
-}
-
-.arrow-back:after {
-  content: "prev";
-}
-
-@media (min-width: 1024px) {
-  .arrow-back {
-    bottom: 24px;
   }
 }
 
