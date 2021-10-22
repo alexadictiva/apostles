@@ -6,10 +6,10 @@
     flex-direction: column;
     .distribution-description-container {
       margin-bottom: 30px;
-      max-width: 1024px;
+      max-width: 700px;
       order: 1;
       @include tablet {
-        margin: 30px auto 0;
+        margin: 60px auto;
         order: 2;
       }
       p {
@@ -20,8 +20,9 @@
     .distribution-cards-container {
       order: 2;
       margin: auto;
-      max-width: 1024px;
+      max-width: 768px;
       display: flex;
+      gap: 20px;
       flex-wrap: wrap;
       /*flex-direction: column;*/
       justify-content: center;
@@ -31,6 +32,7 @@
         order: 1;
         flex-direction: row;
         justify-content: center;
+        gap: 25px;
       }
       .card-container {
         box-shadow: 1px 1px 8px $overlay1;
@@ -38,7 +40,7 @@
         max-width: 280px;
         width: 160px;
         @include tablet {
-          width: 300px;
+          width: 200px;
         }
         .card-container-title {
           background-color: $color4;

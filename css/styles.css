@@ -55,7 +55,7 @@ iframe {
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 hr {
@@ -169,7 +169,7 @@ header .brand {
 .menu .navContainer .menuContainer .menuDropdown {
   height: 100vh;
   background-color: #dbdbdb;
-  padding-top: 70px;
+  padding-top: 80px;
 }
 
 @media (min-width: 1024px) {
@@ -188,9 +188,8 @@ header .brand {
 }
 
 .menu .navContainer .menuContainer .menuDropdown .menuItem {
-  font-size: 1.7rem;
+  font-size: 2rem;
   line-height: 5rem;
-  font-weight: bold;
   padding: 0 0 0 30px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -236,6 +235,7 @@ header .brand {
   .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
     border-right: #0c3c60 1px solid;
     padding: 0 10px;
+    font-size: 1.7rem;
     line-height: 3rem;
     letter-spacing: normal;
   }
@@ -245,7 +245,7 @@ header .brand {
 /*intro*/
 #intro {
   background-color: #2e5776;
-  height: 90vh;
+  height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,7 +257,7 @@ header .brand {
 #intro .intro-container {
   width: 100%;
   background-color: #ffffff50;
-  padding: 40px 20px;
+  padding: 35px 20px;
   text-align: center;
   font-family: "Raleway";
   color: #ffffff;
@@ -310,8 +310,6 @@ header .brand {
   color: #ffffff;
   padding: 60px 40px;
   text-align: center;
-  -webkit-box-shadow: 1px 1px 8px #000000;
-          box-shadow: 1px 1px 8px #000000;
 }
 
 .cards-main-view .card-main h2 {
@@ -345,24 +343,24 @@ header .brand {
 
 .about-main-view .overlay {
   background-color: #0c3c60bd;
-  padding: 60px 40px;
+  padding: 60px 40px 85px;
   text-align: center;
   color: #ffffff;
 }
 
 .about-main-view .overlay h2 {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   font-family: "Raleway";
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 5rem;
   font-weight: 700;
 }
 
 .about-main-view .overlay p {
   max-width: 768px;
-  margin: 0 auto 70px;
-  font-size: 1.9rem;
-  line-height: 2.6rem;
+  margin: 0 auto 90px;
+  font-size: 2rem;
+  line-height: 2.7rem;
 }
 
 .about-main-view .overlay a {
@@ -374,17 +372,17 @@ header .brand {
 
 /*contact us main view*/
 #contactus {
-  padding: 40px 20px;
+  padding: 50px 20px 40px;
   text-align: center;
   color: #ffffff;
   background-color: #2e5776;
 }
 
 #contactus h2 {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 5rem;
 }
 
@@ -435,7 +433,7 @@ header .brand {
   text-align: left;
   margin-bottom: 10px;
   margin-top: 20px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 2rem;
 }
 
@@ -593,7 +591,7 @@ header .brand {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 700px;
+    height: 830px;
     max-width: 280px;
   }
   #about .about-cards-container article:hover > .card {
@@ -637,8 +635,8 @@ header .brand {
 }
 
 #about .about-cards-container article .card p {
-  font-size: 1.5rem;
-  line-height: 2.1rem;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
 }
 
 /*distribution*/
@@ -659,7 +657,7 @@ header .brand {
 
 #distribution .distribution-container .distribution-description-container {
   margin-bottom: 30px;
-  max-width: 1024px;
+  max-width: 700px;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
@@ -667,7 +665,7 @@ header .brand {
 
 @media (min-width: 768px) {
   #distribution .distribution-container .distribution-description-container {
-    margin: 30px auto 0;
+    margin: 60px auto;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -683,10 +681,11 @@ header .brand {
       -ms-flex-order: 2;
           order: 2;
   margin: auto;
-  max-width: 1024px;
+  max-width: 768px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   /*flex-direction: column;*/
@@ -708,6 +707,7 @@ header .brand {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 25px;
   }
 }
 
@@ -721,7 +721,7 @@ header .brand {
 
 @media (min-width: 768px) {
   #distribution .distribution-container .distribution-cards-container .card-container {
-    width: 300px;
+    width: 200px;
   }
 }
 
@@ -890,10 +890,10 @@ header .brand {
 
 /*footer*/
 #footer {
-  padding: 10px 0 0 0;
+  padding: 15px 0 0 0;
   background-color: #0c3c60;
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 #footer div:first-child {
@@ -905,7 +905,7 @@ header .brand {
 }
 
 #footer div:last-child {
-  padding: 0 20px 20px;
+  padding: 15px 20px 20px;
 }
 
 @media (min-width: 1024px) {

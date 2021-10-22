@@ -3,13 +3,13 @@
 /*intro*/
 #intro {
   background-color: $color1;
-  height: 90vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   .intro-container {
     width: 100%;
     background-color: $overlay1;
-    padding: 40px 20px;
+    padding: 35px 20px;
     text-align: center;
     font-family: $fontTitle;
     color: $white;
@@ -49,7 +49,7 @@
     color: $white;
     padding: 60px 40px;
     text-align: center;
-    box-shadow: 1px 1px 8px $black;
+
     h2 {
       font-family: $fontTitle;
       font-size: 3rem;
@@ -74,21 +74,21 @@
   margin: 20px 0;
   .overlay {
     background-color: $overlay2;
-    padding: 60px 40px;
+    padding: 60px 40px 85px;
     text-align: center;
     color: $white;
     h2 {
-      margin-bottom: 30px;
+      margin-bottom: 35px;
       font-family: $fontTitle;
-      font-size: 4rem;
+      font-size: 3.5rem;
       line-height: 5rem;
       font-weight: 700;
     }
     p {
       max-width: 768px;
-      margin: 0 auto 70px;
-      font-size: 1.9rem;
-      line-height: 2.6rem;
+      margin: 0 auto 90px;
+      font-size: 2rem;
+      line-height: 2.7rem;
     }
     a {
       background-color: $color3;
@@ -104,15 +104,15 @@
 /*contact us main view*/
 
 #contactus {
-  padding: 40px 20px;
+  padding: 50px 20px 40px;
   text-align: center;
   color: $white;
   background-color: $color1;
   h2 {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     font-family: $fontTitle;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 5rem;
   }
   .contactus-content {
@@ -142,7 +142,7 @@
           text-align: left;
           margin-bottom: 10px;
           margin-top: 20px;
-          font-size: 1.5rem;
+          font-size: 1.7rem;
           line-height: 2rem;
         }
       }

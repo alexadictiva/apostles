@@ -64,7 +64,7 @@ header {
       .menuDropdown {
         height: 100vh;
         background-color: $color5;
-        padding-top: 70px;
+        padding-top: 80px;
         @include desktop {
           background-color: $white;
           padding-top: 0;
@@ -74,9 +74,8 @@ header {
           height: 60px;
         }
         .menuItem {
-          font-size: 1.7rem;
+          font-size: 2rem;
           line-height: 5rem;
-          font-weight: bold;
           padding: 0 0 0 30px;
           transition: all 0.5s ease-in-out;
           cursor: pointer;
@@ -103,10 +102,12 @@ header {
           .menuLink {
             color: $color2;
             letter-spacing: 2px;
+
             transition: all 0.5s ease-in-out;
             @include desktop {
               border-right: #0c3c60 1px solid;
               padding: 0 10px;
+              font-size: 1.7rem;
               line-height: 3rem;
               letter-spacing: normal;
             }

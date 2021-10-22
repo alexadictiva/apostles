@@ -12,7 +12,7 @@
       margin-bottom: 20px;
       @include desktop {
         @include bgImages;
-        height: 700px;
+        height: 830px;
         max-width: 280px;
         &:hover > .card {
           visibility: visible;
@@ -47,8 +47,8 @@
           text-transform: uppercase;
         }
         p {
-          font-size: $font-caption;
-          line-height: 2.1rem;
+          font-size: 1.7rem;
+          line-height: 2.5rem;
         }
       }
     }
