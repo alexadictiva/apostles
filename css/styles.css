@@ -353,10 +353,12 @@ header .brand {
   color: #ffffff;
   padding: 100px 60px;
   text-align: center;
+  position: relative;
 }
 
 @media (min-width: 1024px) {
   .cards-main-view .card-main {
+    padding: 40px 50px;
     width: 320px;
   }
 }
@@ -366,9 +368,12 @@ header .brand {
   font-size: 3rem;
   font-weight: 400;
   margin-bottom: 20px;
-  /* @include tablet {
-        font-size: 5rem;
-      } */
+}
+
+@media (min-width: 1024px) {
+  .cards-main-view .card-main h2 {
+    font-size: 2.3rem;
+  }
 }
 
 .cards-main-view .card-main p {
@@ -383,7 +388,15 @@ header .brand {
       } */
 }
 
-.cards-main-view .read-more-btn {
+@media (min-width: 1024px) {
+  .cards-main-view .card-main p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin-bottom: 65px;
+  }
+}
+
+.cards-main-view .card-main .read-more-btn {
   background-color: #6ea4ca;
   padding: 15px 0;
   color: #ffffff;
@@ -396,6 +409,18 @@ header .brand {
       padding: 15px 0;
       font-size: 3.5rem;
     } */
+}
+
+@media (min-width: 1024px) {
+  .cards-main-view .card-main .read-more-btn {
+    width: 130px;
+    font-size: 1.6rem;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+  }
 }
 
 /*about main view*/
