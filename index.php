@@ -65,7 +65,7 @@ include './components/header.php';
   <section id="contactus">
     <h2>CONTACT US</h2>
     <div class="contactus-content">
-      <div class="form-container">
+      <div class="form-description">
         <p>
           Calle 53E World Trade Center <br />
           14th Floor Esc. 1404 <br />
@@ -75,6 +75,8 @@ include './components/header.php';
           For more information, complete the following form and we will contact
           you shortly.
         </p>
+        </div>
+        <div class="form-container">
         <form action="POST" id="form">
           <div class="form-control">
             <input
@@ -117,7 +119,7 @@ include './components/header.php';
         </form>
         <a id="mailto" href="mailto:nicolewaingarten@nihebal.com.ar">MAIL</a>
       </div>
-      <div class="contactus-description">
+      <div class="contactus-map">
         <div class="map-container">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.9103833789372!2d-79.52242598569356!3d8.98039379222216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca8e3edc9e20d%3A0x7f7d590dc09caff!2sWorld%20Trade%20Center%20Panama!5e0!3m2!1ses-419!2sar!4v1634491759669!5m2!1ses-419!2sar"

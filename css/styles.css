@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Raleway";
-  src: url("./../fonts/Raleway-Thin.woff2") format("woff2"), url("./../fonts/Raleway-Thin.woff") format("woff"), url("./../fonts/Raleway-Thin.ttf") format("truetype");
+  src: url("./../fonts/Raleway.woff2") format("woff2"), url("./../fonts/Raleway.woff") format("woff"), url("./../fonts/Raleway.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -254,6 +254,12 @@ header .brand {
           align-items: center;
 }
 
+@media (min-width: 768px) {
+  #intro {
+    height: 100vh;
+  }
+}
+
 #intro .intro-container {
   width: 100%;
   background-color: #ffffff50;
@@ -261,6 +267,9 @@ header .brand {
   text-align: center;
   font-family: "Raleway";
   color: #ffffff;
+  /* @include tablet {
+      padding: 45px 20px;
+    } */
 }
 
 #intro .intro-container .intro-description-bolder {
@@ -268,16 +277,46 @@ header .brand {
   letter-spacing: 0.05em;
 }
 
+@media (min-width: 1024px) {
+  #intro .intro-container .intro-description-bolder {
+    margin-bottom: 10px;
+  }
+}
+
 #intro .intro-container .intro-description-bolder p {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 2rem;
   line-height: 2.5rem;
 }
 
+@media (min-width: 768px) {
+  #intro .intro-container .intro-description-bolder p {
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
 #intro .intro-container .intro-description-normal h1 {
   font-weight: 400;
-  font-size: 2.7rem;
+  font-size: 3.1rem;
   line-height: 2.2rem;
+}
+
+@media (min-width: 768px) {
+  #intro .intro-container .intro-description-normal h1 {
+    font-size: 5.3rem;
+    line-height: 5.3rem;
+    padding: 8px 0 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #intro .intro-container .intro-description-normal h1 {
+    font-size: 5.8rem;
+    line-height: 4.3rem;
+  }
 }
 
 /*card main view*/
@@ -312,7 +351,7 @@ header .brand {
 .cards-main-view .card-main {
   background-color: #0c3c60;
   color: #ffffff;
-  padding: 60px 40px;
+  padding: 100px 60px;
   text-align: center;
 }
 
@@ -327,19 +366,36 @@ header .brand {
   font-size: 3rem;
   font-weight: 400;
   margin-bottom: 20px;
+  /* @include tablet {
+        font-size: 5rem;
+      } */
 }
 
 .cards-main-view .card-main p {
   margin-bottom: 30px;
   font-size: 1.9rem;
   line-height: 2.6rem;
+  /*  @include tablet {
+        margin-bottom: 50px;
+        padding: 0 20px;
+        font-size: 3rem;
+        line-height: 4.4rem;
+      } */
 }
 
 .cards-main-view .read-more-btn {
   background-color: #6ea4ca;
-  padding: 12px 30px;
+  padding: 15px 0;
   color: #ffffff;
-  font-size: 1.9rem;
+  font-size: 2.3rem;
+  display: block;
+  width: 190px;
+  margin: auto;
+  /*  @include tablet {
+      width: 310px;
+      padding: 15px 0;
+      font-size: 3.5rem;
+    } */
 }
 
 /*about main view*/
@@ -361,34 +417,66 @@ header .brand {
 .about-main-view .overlay h2 {
   margin-bottom: 35px;
   font-family: "Raleway";
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   line-height: 5rem;
-  font-weight: 700;
+  font-weight: 500;
+  /* @include tablet {
+        font-size: 5rem;
+      } */
 }
 
 @media (min-width: 1024px) {
   .about-main-view .overlay h2 {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
   }
 }
 
 .about-main-view .overlay p {
   max-width: 768px;
   margin: 0 auto 90px;
-  font-size: 2rem;
-  line-height: 2.7rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  /* @include tablet {
+        max-width: 768px;
+        margin: 0 auto 90px;
+        font-size: 3.3rem;
+        line-height: 4.3rem;
+        padding: 0 40px;
+      } */
+}
+
+@media (min-width: 1024px) {
+  .about-main-view .overlay p {
+    text-align: justify;
+    font-size: 1.6rem;
+  }
 }
 
 .about-main-view .overlay a {
   background-color: #6ea4ca;
-  padding: 12px 30px;
+  padding: 15px 0;
   color: #ffffff;
-  font-size: 1.9rem;
+  font-size: 2.3rem;
+  display: block;
+  width: 190px;
+  margin: auto;
+  /*  @include tablet {
+        width: 310px;
+        padding: 15px 0;
+        font-size: 3.5rem;
+      } */
+}
+
+@media (min-width: 1024px) {
+  .about-main-view .overlay a {
+    width: 120px;
+    font-size: 1.5rem;
+  }
 }
 
 /*contact us main view*/
 #contactus {
-  padding: 50px 20px 40px;
+  padding: 50px 25px 40px;
   text-align: center;
   color: #ffffff;
   background-color: #2e5776;
@@ -397,19 +485,23 @@ header .brand {
 #contactus h2 {
   margin-bottom: 35px;
   font-family: "Raleway";
-  font-weight: 700;
-  font-size: 3.5rem;
+  font-weight: 500;
+  font-size: 3.2rem;
   line-height: 5rem;
+  /* @include tablet {
+      font-size: 5rem;
+    } */
 }
 
 @media (min-width: 1024px) {
   #contactus h2 {
-    font-size: 4.5rem;
+    font-size: 5.2rem;
+    line-height: 5.5rem;
   }
 }
 
 #contactus .contactus-content {
-  max-width: 1024px;
+  max-width: 901px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -421,42 +513,70 @@ header .brand {
   gap: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #contactus .contactus-content {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "card1 card2" "card3 card4";
   }
 }
 
-@media (min-width: 768px) {
-  #contactus .contactus-content .form-container {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    width: 50%;
+#contactus .contactus-content .form-description {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media (min-width: 1024px) {
+  #contactus .contactus-content .form-description {
+    grid-area: card2;
   }
+}
+
+#contactus .contactus-content .form-description p:nth-child(1) {
+  margin: 0 0 50px;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+@media (min-width: 1024px) {
+  #contactus .contactus-content .form-description p:nth-child(1) {
+    margin-bottom: 35px;
+    line-height: 2.3rem;
+  }
+}
+
+#contactus .contactus-content .form-description p:nth-child(2) {
+  text-align: left;
+  margin: 10px 0;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  #contactus .contactus-content .form-description p:nth-child(2) {
+    margin-bottom: 0;
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+  }
+}
+
+#contactus .contactus-content .form-container {
+  margin-top: 10px;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 
 @media (min-width: 1024px) {
   #contactus .contactus-content .form-container {
-    padding: 0 60px;
+    margin-top: -20px;
+    padding: 0;
+    grid-area: card4;
+    width: 100%;
   }
-}
-
-#contactus .contactus-content .form-container p:nth-child(1) {
-  margin: 0 0 10px;
-  font-size: 1.9rem;
-  line-height: 2.6rem;
-}
-
-#contactus .contactus-content .form-container p:nth-child(2) {
-  text-align: left;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  font-size: 1.7rem;
-  line-height: 2rem;
 }
 
 #contactus .contactus-content .form-container #mailto {
@@ -470,7 +590,13 @@ header .brand {
 }
 
 #contactus .contactus-content .form-container form .form-control {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 1024px) {
+  #contactus .contactus-content .form-container form .form-control {
+    margin-bottom: 8px;
+  }
 }
 
 #contactus .contactus-content .form-container form .form-control input {
@@ -478,74 +604,74 @@ header .brand {
   padding-left: 10px;
   border: 0;
   outline: none;
-  height: 28px;
+  height: 38px;
 }
 
 #contactus .contactus-content .form-container form .form-control input::-webkit-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   padding-left: 5px;
 }
 
 #contactus .contactus-content .form-container form .form-control input:-ms-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   padding-left: 5px;
 }
 
 #contactus .contactus-content .form-container form .form-control input::-ms-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   padding-left: 5px;
 }
 
 #contactus .contactus-content .form-container form .form-control input::placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   padding-left: 5px;
 }
 
 #contactus .contactus-content .form-container form .form-control textarea {
   width: 100%;
-  height: 125px;
+  height: 170px;
   padding-left: 5px;
-  padding-top: 5px;
+  padding-top: 10px;
   outline: none;
 }
 
 #contactus .contactus-content .form-container form .form-control textarea::-webkit-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.5rem;
-  padding-left: 5px;
+  font-size: 1.9rem;
+  padding-left: 15px;
   padding-top: 3px;
 }
 
 #contactus .contactus-content .form-container form .form-control textarea:-ms-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.5rem;
-  padding-left: 5px;
+  font-size: 1.9rem;
+  padding-left: 15px;
   padding-top: 3px;
 }
 
 #contactus .contactus-content .form-container form .form-control textarea::-ms-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.5rem;
-  padding-left: 5px;
+  font-size: 1.9rem;
+  padding-left: 15px;
   padding-top: 3px;
 }
 
 #contactus .contactus-content .form-container form .form-control textarea::placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.5rem;
-  padding-left: 5px;
+  font-size: 1.9rem;
+  padding-left: 15px;
   padding-top: 3px;
 }
 
@@ -553,7 +679,7 @@ header .brand {
   border: 0;
   outline: none;
   background-color: #6ea4ca;
-  padding: 12px 30px;
+  padding: 10px 30px;
   color: #ffffff;
   font-size: 1.9rem;
   width: 100%;
@@ -562,27 +688,34 @@ header .brand {
 @media (min-width: 1024px) {
   #contactus .contactus-content .form-container form .btn-sumbit {
     width: 40%;
-    padding: 5px 10px;
+    padding: 8px 10px;
+    font-size: 2.1rem;
   }
 }
 
-@media (min-width: 768px) {
-  #contactus .contactus-content .contactus-description {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    width: 50%;
-  }
-}
-
-#contactus .contactus-content .contactus-description #map {
-  width: 100%;
-  height: 340px;
+#contactus .contactus-content .contactus-map {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 @media (min-width: 1024px) {
-  #contactus .contactus-content .contactus-description #map {
-    height: 440px;
+  #contactus .contactus-content .contactus-map {
+    grid-area: card1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
+
+#contactus .contactus-content .contactus-map #map {
+  width: 100%;
+  height: 270px;
+}
+
+@media (min-width: 1024px) {
+  #contactus .contactus-content .contactus-map #map {
+    height: 520px;
   }
 }
 
@@ -832,6 +965,12 @@ header .brand {
   bottom: 100px;
 }
 
+@media (min-width: 394px) {
+  #portfolio .swiper .arrow-next {
+    bottom: 76px;
+  }
+}
+
 @media (min-width: 768px) {
   #portfolio .swiper .arrow-next {
     bottom: 52px;
@@ -849,6 +988,12 @@ header .brand {
   position: absolute;
   bottom: 100px;
   right: 60px;
+}
+
+@media (min-width: 394px) {
+  #portfolio .swiper .arrow-back {
+    bottom: 76px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -975,7 +1120,7 @@ header .brand {
 }
 
 #footer div:first-child p {
-  line-height: 2.1rem;
+  line-height: 2.5rem;
 }
 
 @media (min-width: 1024px) {
@@ -986,6 +1131,7 @@ header .brand {
 
 #footer div:last-child {
   padding: 15px 20px 20px;
+  font-size: 1.9rem;
 }
 
 @media (min-width: 1024px) {
