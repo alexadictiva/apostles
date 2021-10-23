@@ -75,8 +75,8 @@ include './components/header.php';
           For more information, complete the following form and we will contact
           you shortly.
         </p>
-        </div>
-        <div class="form-container">
+      </div>
+      <div class="form-container">
         <form action="POST" id="form">
           <div class="form-control">
             <input
@@ -131,6 +131,7 @@ include './components/header.php';
     </div>
   </section>
 </main>
+
 <script>
   /*Form*/
 
@@ -143,7 +144,7 @@ include './components/header.php';
     event.preventDefault();
 
     const formulario = new FormData(this);
-     mailto.setAttribute(
+    mailto.setAttribute(
       "href",
       `mailto:academiatrucking@gmail.com?subject=${formulario.get(
         "name"

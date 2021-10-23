@@ -27,12 +27,12 @@
       }
       p {
         font-weight: 900;
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.5rem;
+
         @include tablet {
           letter-spacing: 2px;
           font-weight: 700;
-          font-size: 2rem;
+          font-size: 2.1rem;
           line-height: 2.5rem;
         }
       }

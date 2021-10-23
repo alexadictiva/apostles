@@ -2,18 +2,30 @@
 
 #about {
   @include padding;
+  h1 {
+    display: none;
+    @include desktop {
+      display: block;
+    }
+  }
+  hr {
+    display: none;
+    @include desktop {
+      display: block;
+    }
+  }
   .about-cards-container {
     @include desktop {
       display: flex;
       justify-content: center;
-      gap: 40px;
+      gap: 20px;
     }
     article {
       margin-bottom: 20px;
       @include desktop {
         @include bgImages;
-        height: 830px;
-        max-width: 280px;
+        /*height: 830px;*/
+        max-width: 200px;
         &:hover > .card {
           visibility: visible;
         }
@@ -36,19 +48,27 @@
           background-color: $overlay2;
           height: 100%;
           width: 100%;
-          padding: 60px 40px;
+          padding: 60px 30px;
           visibility: hidden;
           transition: visibility 0.5s ease-in-out;
         }
         h3 {
-          font-size: 2rem;
+          font-size: 2.2rem;
           line-height: 3rem;
           margin-bottom: 10px;
           text-transform: uppercase;
+          @include desktop {
+            font-size: 2.2rem;
+          }
         }
         p {
-          font-size: 1.7rem;
-          line-height: 2.5rem;
+          font-size: 1.5rem;
+          line-height: 2.1rem;
+          @include desktop {
+            font-size: 1.3rem;
+            line-height: 1.8rem;
+            text-align: left;
+          }
         }
       }
     }
