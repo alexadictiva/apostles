@@ -40,9 +40,8 @@ include './components/header.php';
                 swiper-pagination-horizontal
               "
             >
-               
-              <span class="swiper-pagination-current"> 1</span> /
-              <span class="swiper-pagination-total">6</span>
+              <!-- <span class="swiper-pagination-current"> 1</span> /
+              <span class="swiper-pagination-total">6</span> -->
             </div>
           </div>
         </div>
@@ -184,8 +183,26 @@ include './components/header.php';
         <!-- Finish Image6 -->
       </div>
       <!-- inicio flechas -->
-      <div class="arrow-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-fda3f4823a8469d6" aria-disabled="false"> <img src="./assets/icon/arrow-next.svg" alt=""> </div>
-      <div class="arrow-back" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-fda3f4823a8469d6" aria-disabled="true"><img src="./assets/icon/arrow-back.svg" alt=""></div>
+      <div
+        class="arrow-next"
+        tabindex="0"
+        role="button"
+        aria-label="Next slide"
+        aria-controls="swiper-wrapper-fda3f4823a8469d6"
+        aria-disabled="false"
+      >
+        <img src="./assets/icon/arrow-next.svg" alt="arrow next icon" />
+      </div>
+      <div
+        class="arrow-back"
+        tabindex="-1"
+        role="button"
+        aria-label="Previous slide"
+        aria-controls="swiper-wrapper-fda3f4823a8469d6"
+        aria-disabled="true"
+      >
+        <img src="./assets/icon/arrow-back.svg" alt="arrow black icon" />
+      </div>
       <!-- fin flechas -->
     </div>
     <div class="portfolio-description">

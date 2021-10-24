@@ -38,14 +38,11 @@
         font-weight: 400;
         font-size: 2.7rem;
         line-height: 2.2rem;
-        @include tablet {
-          font-size: 5.3rem;
-          line-height: 5.3rem;
-          padding: 8px 0 15px;
-        }
+
         @include desktop {
-          font-size: 5.8rem;
+          font-size: 5.3rem;
           line-height: 4.3rem;
+          padding: 8px 0 15px;
         }
       }
     }

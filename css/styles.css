@@ -56,6 +56,7 @@ iframe {
 
 .title {
   font-size: 3.5rem;
+  color: #2e5776;
 }
 
 hr {
@@ -188,8 +189,7 @@ header .brand {
 }
 
 .menu .navContainer .menuContainer .menuDropdown .menuItem {
-  font-size: 2rem;
-  line-height: 5rem;
+  line-height: 4.2rem;
   padding: 0 0 0 30px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -227,6 +227,7 @@ header .brand {
 .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   color: #0c3c60;
   letter-spacing: 2px;
+  font-size: 1.6rem;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -235,7 +236,6 @@ header .brand {
   .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
     border-right: #0c3c60 1px solid;
     padding: 0 10px;
-    font-size: 1.7rem;
     line-height: 3rem;
     letter-spacing: normal;
   }
@@ -298,18 +298,11 @@ header .brand {
   line-height: 2.2rem;
 }
 
-@media (min-width: 768px) {
-  #intro .intro-container .intro-description-normal h1 {
-    font-size: 5.3rem;
-    line-height: 5.3rem;
-    padding: 8px 0 15px;
-  }
-}
-
 @media (min-width: 1024px) {
   #intro .intro-container .intro-description-normal h1 {
-    font-size: 5.8rem;
+    font-size: 5.3rem;
     line-height: 4.3rem;
+    padding: 8px 0 15px;
   }
 }
 
@@ -1180,6 +1173,10 @@ header .brand {
   #portfolio .portfolio-description {
     margin-bottom: 160px;
   }
+}
+
+#portfolio .portfolio-description p {
+  color: #2e5776;
 }
 
 @media (min-width: 1024px) {
