@@ -1,22 +1,18 @@
 <div class="wrapper">
   <header>
     <section class="brand">
-      <a href="./index.php">LOGO</a>
+      <a href="./index.php">
+        <img src="./assets/images/logo.png" alt="Logo" />
+        <span> THE TWELVE APOSTLES INC. </span>
+      </a>
     </section>
     <section class="menu">
-      <label for="menuBotton">
+      <button class="menuBottom" id="menuBottom">
         <img src="./assets/icon/menuIcon.svg" />
-      </label>
-      <input
-        type="checkbox"
-        name="menuBotton"
-        class="menuBotton"
-        id="menuBotton"
-      />
-      <div class="navContainer">
+      </button>
+      <div class="navContainer" id="navContainer">
         <nav class="menuContainer">
           <ul class="menuDropdown">
-           
             <li class="menuItem">
               <a class="menuLink" href="./about.php">About us</a>
             </li>
@@ -36,5 +32,18 @@
         </nav>
       </div>
     </section>
-  </header>
+    <script>
+      let botonMenu = document.querySelector("#menuBottom");
+      botonMenu.addEventListener("click", mostrarMenu);
 
+      let navContainer = document.querySelector(".navContainer");
+      let body = document.querySelector("body");
+      let container = document.querySelector("main");
+
+      function mostrarMenu() {
+        navContainer.classList.toggle("hidden");
+        body.classList.toggle("showed");
+      }
+    </script>
+  </header>
+</div>

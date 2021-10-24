@@ -14,7 +14,7 @@ include './components/header.php';
           The Twelve Apostles Inc. has established commercial relationships with
           various kind of clients thanks to the requirement of the new
           distribution landscape. This allows brands to maximize the reach on a
-          global scale.
+          global scale. We rely on relationships with market-leaders to provide the perfect price/product mix. Currently, Twelve Apostles Inc. distributes the multiple brand products over a variety of market channels.
         </p>
       </div>
       <div class="distribution-cards-container">

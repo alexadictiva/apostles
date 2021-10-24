@@ -28,7 +28,7 @@
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-family: "Open Sans";
   color: #0c3c60;
 }
@@ -70,6 +70,10 @@ h1 {
   text-align: center;
 }
 
+.showed {
+  overflow: hidden;
+}
+
 /*Header*/
 header {
   background-color: #ffffff;
@@ -93,12 +97,56 @@ header {
 
 header .brand {
   padding-left: 20px;
-  width: 20%;
+  width: 90%;
+}
+
+header .brand a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  header .brand a {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+header .brand a img {
+  width: 80px;
+}
+
+@media (min-width: 768px) {
+  header .brand a img {
+    width: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header .brand a img {
+    width: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header .brand {
+    width: 40%;
+  }
 }
 
 .menu {
   height: 100%;
-  width: 80%;
+  width: 10%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,54 +160,60 @@ header .brand {
   z-index: 10;
 }
 
-.menu label {
-  margin-top: 5px;
-  padding-right: 30px;
-  cursor: pointer;
+@media (min-width: 1024px) {
+  .menu {
+    width: 60%;
+  }
 }
 
-.menu label img {
+.menu .menuBottom {
+  margin-top: 2px;
+  padding-right: 30px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  width: 100px;
+}
+
+.menu .menuBottom img {
   width: 35px;
 }
 
 @media (min-width: 1024px) {
-  .menu label {
+  .menu .menuBottom {
     display: none;
   }
 }
 
-.menu .menuBotton {
-  display: none;
+.menu .hidden {
+  left: -90vw !important;
 }
 
-.menu .menuBotton:checked ~ .navContainer {
-  left: -25%;
-}
-
-.menu .navContainer {
+.menu #navContainer {
   position: absolute;
   top: 0px;
-  left: -800px;
+  left: -190vw;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 @media (min-width: 1024px) {
-  .menu .navContainer {
+  .menu #navContainer {
     position: static;
     top: 90px;
     width: 100%;
   }
 }
 
-.menu .navContainer .menuContainer {
+.menu #navContainer .menuContainer {
   height: 100vh;
   width: 50vw;
   background-color: #ffffff;
 }
 
 @media (min-width: 1024px) {
-  .menu .navContainer .menuContainer {
+  .menu #navContainer .menuContainer {
     height: 60px;
     width: 100%;
     top: 0;
@@ -167,14 +221,14 @@ header .brand {
   }
 }
 
-.menu .navContainer .menuContainer .menuDropdown {
+.menu #navContainer .menuContainer .menuDropdown {
   height: 100vh;
   background-color: #dbdbdb;
   padding-top: 80px;
 }
 
 @media (min-width: 1024px) {
-  .menu .navContainer .menuContainer .menuDropdown {
+  .menu #navContainer .menuContainer .menuDropdown {
     background-color: #ffffff;
     padding-top: 0;
     padding-right: 15px;
@@ -188,20 +242,20 @@ header .brand {
   }
 }
 
-.menu .navContainer .menuContainer .menuDropdown .menuItem {
-  line-height: 4.2rem;
+.menu #navContainer .menuContainer .menuDropdown .menuItem {
+  line-height: 5.2rem;
   padding: 0 0 0 30px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 
-.menu .navContainer .menuContainer .menuDropdown .menuItem:last-child {
+.menu #navContainer .menuContainer .menuDropdown .menuItem:last-child {
   border: 0;
 }
 
 @media (min-width: 1024px) {
-  .menu .navContainer .menuContainer .menuDropdown .menuItem {
+  .menu #navContainer .menuContainer .menuDropdown .menuItem {
     padding: 0;
     line-height: 2rem;
     display: -webkit-box;
@@ -211,31 +265,31 @@ header .brand {
         -ms-flex-align: center;
             align-items: center;
     font-weight: normal;
-    /*border-right: solid 0.5px $color2;*/
   }
-  .menu .navContainer .menuContainer .menuDropdown .menuItem:last-child {
+  .menu #navContainer .menuContainer .menuDropdown .menuItem:last-child {
     border: 0;
   }
-  .menu .navContainer .menuContainer .menuDropdown .menuItem:hover > .menuLink {
+  .menu #navContainer .menuContainer .menuDropdown .menuItem:hover > .menuLink {
     color: #dbdbdb;
   }
-  .menu .navContainer .menuContainer .menuDropdown .menuItem:last-child > .menuLink {
+  .menu #navContainer .menuContainer .menuDropdown .menuItem:last-child > .menuLink {
     border-right: 0;
   }
 }
 
-.menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
+.menu #navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   color: #0c3c60;
   letter-spacing: 2px;
-  font-size: 1.6rem;
+  font-size: 2rem;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 @media (min-width: 1024px) {
-  .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
+  .menu #navContainer .menuContainer .menuDropdown .menuItem .menuLink {
     border-right: #0c3c60 1px solid;
     padding: 0 10px;
+    font-size: 1.6rem;
     line-height: 3rem;
     letter-spacing: normal;
   }
@@ -281,7 +335,7 @@ header .brand {
 
 #intro .intro-container .intro-description-bolder p {
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 @media (min-width: 768px) {
@@ -293,8 +347,7 @@ header .brand {
 }
 
 #intro .intro-container .intro-description-normal h1 {
-  font-weight: 400;
-  font-size: 2.7rem;
+  font-size: 3.2rem;
   line-height: 2.2rem;
 }
 
@@ -352,8 +405,7 @@ header .brand {
 
 .cards-main-view .card-main h2 {
   font-family: "Raleway";
-  font-size: 2.5rem;
-  font-weight: 400;
+  font-size: 2.9rem;
   margin-bottom: 20px;
 }
 
@@ -365,13 +417,13 @@ header .brand {
 
 .cards-main-view .card-main p {
   margin-bottom: 30px;
-  font-size: 1.6rem;
-  line-height: 2.3rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
 }
 
 @media (min-width: 1024px) {
   .cards-main-view .card-main p {
-    line-height: 2.5rem;
+    line-height: 2.4rem;
     margin-bottom: 65px;
   }
 }
@@ -380,7 +432,7 @@ header .brand {
   background-color: #6ea4ca;
   padding: 8px 0;
   color: #ffffff;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   display: block;
   width: 60%;
   margin: auto;
@@ -409,6 +461,7 @@ header .brand {
   background-size: cover;
   background-position: center;
   background-image: url("./../assets/images/aboutUs/ourVision.jpg");
+  background-position-y: 0;
 }
 
 .about-main-view .overlay {
@@ -423,7 +476,6 @@ header .brand {
   font-family: "Raleway";
   font-size: 2.8rem;
   line-height: 5rem;
-  font-weight: 500;
 }
 
 @media (min-width: 1024px) {
@@ -435,7 +487,7 @@ header .brand {
 .about-main-view .overlay p {
   max-width: 700px;
   margin: 0 auto 60px;
-  line-height: 2.5rem;
+  line-height: 2.6rem;
 }
 
 @media (min-width: 1024px) {
@@ -477,7 +529,6 @@ header .brand {
 #contactus .contactus-container h2 {
   margin-bottom: 35px;
   font-family: "Raleway";
-  font-weight: 500;
   font-size: 2.8rem;
   line-height: 5rem;
 }
@@ -527,12 +578,11 @@ header .brand {
 
 #contactus .contactus-container .contactus-content .form-description p:nth-child(1) {
   margin: 0 0 50px;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 @media (min-width: 1024px) {
   #contactus .contactus-container .contactus-content .form-description p:nth-child(1) {
-    font-size: 1.6rem;
     margin-bottom: 35px;
     line-height: 2.3rem;
   }
@@ -541,7 +591,7 @@ header .brand {
 #contactus .contactus-container .contactus-content .form-description p:nth-child(2) {
   text-align: left;
   margin: 10px 0;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 @media (min-width: 1024px) {
@@ -598,28 +648,28 @@ header .brand {
 #contactus .contactus-container .contactus-content .form-container form .form-control input::-webkit-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding-left: 5px;
 }
 
 #contactus .contactus-container .contactus-content .form-container form .form-control input:-ms-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding-left: 5px;
 }
 
 #contactus .contactus-container .contactus-content .form-container form .form-control input::-ms-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding-left: 5px;
 }
 
 #contactus .contactus-container .contactus-content .form-container form .form-control input::placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding-left: 5px;
 }
 
@@ -634,7 +684,7 @@ header .brand {
 #contactus .contactus-container .contactus-content .form-container form .form-control textarea::-webkit-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding-left: 15px;
   padding-top: 3px;
 }
@@ -642,7 +692,7 @@ header .brand {
 #contactus .contactus-container .contactus-content .form-container form .form-control textarea:-ms-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding-left: 15px;
   padding-top: 3px;
 }
@@ -650,7 +700,7 @@ header .brand {
 #contactus .contactus-container .contactus-content .form-container form .form-control textarea::-ms-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding-left: 15px;
   padding-top: 3px;
 }
@@ -658,7 +708,7 @@ header .brand {
 #contactus .contactus-container .contactus-content .form-container form .form-control textarea::placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding-left: 15px;
   padding-top: 3px;
 }
@@ -681,7 +731,7 @@ header .brand {
 @media (min-width: 1024px) {
   #contactus .contactus-container .contactus-content .form-container form .btn-sumbit {
     width: 41%;
-    padding: 4px 10px;
+    padding: 6px 10px;
   }
 }
 
@@ -777,7 +827,7 @@ header .brand {
 }
 
 #about .about-cards-container article .card {
-  padding: 20px;
+  padding: 40px 20px;
   background-color: #f2f5f7;
   color: #0c3c60;
 }
@@ -796,7 +846,7 @@ header .brand {
 }
 
 #about .about-cards-container article .card h3 {
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   line-height: 3rem;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -809,8 +859,8 @@ header .brand {
 }
 
 #about .about-cards-container article .card p {
-  font-size: 1.5rem;
-  line-height: 2.1rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
 }
 
 @media (min-width: 1024px) {
@@ -877,11 +927,9 @@ header .brand {
   gap: 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  /*flex-direction: column;*/
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
 }
 
 @media (min-width: 768px) {
@@ -1031,23 +1079,20 @@ header .brand {
 }
 
 #portfolio .swiper .arrow-back,
-#portfolio .swiper .arrow-next,
-#portfolio .swiper .pagination {
+#portfolio .swiper .arrow-next {
   bottom: 50px;
 }
 
 @media (min-width: 375px) {
   #portfolio .swiper .arrow-back,
-  #portfolio .swiper .arrow-next,
-  #portfolio .swiper .pagination {
+  #portfolio .swiper .arrow-next {
     bottom: 50px;
   }
 }
 
 @media (min-width: 394px) {
   #portfolio .swiper .arrow-back,
-  #portfolio .swiper .arrow-next,
-  #portfolio .swiper .pagination {
+  #portfolio .swiper .arrow-next {
     bottom: 31px;
   }
 }
@@ -1062,15 +1107,17 @@ header .brand {
 #portfolio .swiper .pagination {
   position: absolute;
   text-align: right;
-  padding-right: 18px;
+  padding-right: 14px;
   z-index: 10;
+  font-size: 1.6rem;
+  bottom: 34px;
 }
 
 #portfolio .swiper .arrow-back {
   z-index: 20;
   cursor: pointer;
   position: absolute;
-  right: 60px;
+  right: 51px;
 }
 
 #portfolio .swiper .swiper-slide {
@@ -1145,8 +1192,19 @@ header .brand {
   text-align: initial;
 }
 
+#portfolio .swiper .swiper-slide .alignement div:first-child h4 {
+  font-weight: normal;
+  font-size: 1.8rem;
+}
+
 #portfolio .swiper .swiper-slide .alignement div:first-child p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  #portfolio .swiper .swiper-slide .alignement div:first-child p {
+    font-size: 1.4rem;
+  }
 }
 
 #portfolio .portfolio-description {

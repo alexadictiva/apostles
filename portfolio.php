@@ -32,17 +32,6 @@ include './components/header.php';
               <h4>WATCHES</h4>
               <p>Mid-Tier, Fashion & Luxury</p>
             </div>
-
-            <!-- <div
-              class="
-                swiper-pagination
-                swiper-pagination-fraction
-                swiper-pagination-horizontal
-              "
-            >
-               <span class="swiper-pagination-current"> 1</span> /
-              <span class="swiper-pagination-total">6</span> 
-            </div> -->
           </div>
         </div>
         <!-- Finish Image1 -->
@@ -59,17 +48,6 @@ include './components/header.php';
               <h4>JEWLERY</h4>
               <p>Low-Tier, Mid-Tier & Fashion</p>
             </div>
-
-            <!-- <div
-              class="
-                swiper-pagination
-                swiper-pagination-fraction
-                swiper-pagination-horizontal
-              "
-            >
-              <span class="swiper-pagination-current"> 1</span> /
-              <span class="swiper-pagination-total">6</span>
-            </div> -->
           </div>
         </div>
         <!-- Finish Image2 -->
@@ -86,17 +64,6 @@ include './components/header.php';
               <h4>HANDBAGS</h4>
               <p>Leather & Fashion</p>
             </div>
-
-            <!-- <div
-              class="
-                swiper-pagination
-                swiper-pagination-fraction
-                swiper-pagination-horizontal
-              "
-            >
-              <span class="swiper-pagination-current"> 1</span> /
-              <span class="swiper-pagination-total">6</span>
-            </div> -->
           </div>
         </div>
         <!-- Finish Image3 -->
@@ -113,17 +80,6 @@ include './components/header.php';
               <h4>TRAVEL GEAR</h4>
               <p>Leather & Fashion</p>
             </div>
-
-            <!--  <div
-              class="
-                swiper-pagination
-                swiper-pagination-fraction
-                swiper-pagination-horizontal
-              "
-            >
-              <span class="swiper-pagination-current"> 1</span> /
-              <span class="swiper-pagination-total">6</span>
-            </div> -->
           </div>
         </div>
         <!-- Finish Image4 -->
@@ -140,21 +96,10 @@ include './components/header.php';
               <h4>HOME GOODS</h4>
               <p>Appliances, Kitchen Ware, Table Ware & Cook Ware</p>
             </div>
-            <!-- 
-            <div
-              class="
-                swiper-pagination
-                swiper-pagination-fraction
-                swiper-pagination-horizontal
-              "
-            >
-              <span class="swiper-pagination-current"> 1</span> /
-              <span class="swiper-pagination-total">6</span>
-            </div> -->
           </div>
         </div>
         <!-- Finish Image5 -->
-        <!-- Start Image6  se lo saque a este-->
+        <!-- Start Image6  -->
         <div
           class="swiper-slide swiper-slide-active slide6"
           role="group"
@@ -188,8 +133,10 @@ include './components/header.php';
           swiper-pagination-fraction swiper-pagination-horizontal
         "
       >
-        <span class="swiper-pagination-current"> 1</span> /
-        <span class="swiper-pagination-total">6</span>
+        <span class="swiper-pagination-current"> 1</span>/<span
+          class="swiper-pagination-total"
+          >6</span
+        >
       </div>
       <div
         class="arrow-back"
