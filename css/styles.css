@@ -467,14 +467,14 @@ header .brand {
 }
 
 /*contact us main view*/
-#contactus {
+#contactus .contactus-container {
   padding: 50px 25px 40px;
   text-align: center;
   color: #ffffff;
   background-color: #2e5776;
 }
 
-#contactus h2 {
+#contactus .contactus-container h2 {
   margin-bottom: 35px;
   font-family: "Raleway";
   font-weight: 500;
@@ -483,13 +483,13 @@ header .brand {
 }
 
 @media (min-width: 1024px) {
-  #contactus h2 {
+  #contactus .contactus-container h2 {
     font-size: 5.8rem;
     line-height: 5.5rem;
   }
 }
 
-#contactus .contactus-content {
+#contactus .contactus-container .contactus-content {
   max-width: 915px;
   margin: auto;
   display: -webkit-box;
@@ -503,7 +503,7 @@ header .brand {
 }
 
 @media (min-width: 1024px) {
-  #contactus .contactus-content {
+  #contactus .contactus-container .contactus-content {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -512,46 +512,46 @@ header .brand {
   }
 }
 
-#contactus .contactus-content .form-description {
+#contactus .contactus-container .contactus-content .form-description {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
 }
 
 @media (min-width: 1024px) {
-  #contactus .contactus-content .form-description {
+  #contactus .contactus-container .contactus-content .form-description {
     grid-area: card2;
     padding: 0 25px;
   }
 }
 
-#contactus .contactus-content .form-description p:nth-child(1) {
+#contactus .contactus-container .contactus-content .form-description p:nth-child(1) {
   margin: 0 0 50px;
   font-size: 1.6rem;
 }
 
 @media (min-width: 1024px) {
-  #contactus .contactus-content .form-description p:nth-child(1) {
+  #contactus .contactus-container .contactus-content .form-description p:nth-child(1) {
     font-size: 1.6rem;
     margin-bottom: 35px;
     line-height: 2.3rem;
   }
 }
 
-#contactus .contactus-content .form-description p:nth-child(2) {
+#contactus .contactus-container .contactus-content .form-description p:nth-child(2) {
   text-align: left;
   margin: 10px 0;
   font-size: 1.5rem;
 }
 
 @media (min-width: 1024px) {
-  #contactus .contactus-content .form-description p:nth-child(2) {
+  #contactus .contactus-container .contactus-content .form-description p:nth-child(2) {
     margin-bottom: 0;
     line-height: 2.2rem;
   }
 }
 
-#contactus .contactus-content .form-container {
+#contactus .contactus-container .contactus-content .form-container {
   margin-top: 10px;
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
@@ -559,7 +559,7 @@ header .brand {
 }
 
 @media (min-width: 1024px) {
-  #contactus .contactus-content .form-container {
+  #contactus .contactus-container .contactus-content .form-container {
     margin-top: -20px;
     padding: 0 25px;
     grid-area: card4;
@@ -567,27 +567,27 @@ header .brand {
   }
 }
 
-#contactus .contactus-content .form-container #mailto {
+#contactus .contactus-container .contactus-content .form-container #mailto {
   visibility: hidden;
 }
 
 @media (min-width: 1024px) {
-  #contactus .contactus-content .form-container form {
+  #contactus .contactus-container .contactus-content .form-container form {
     text-align: right;
   }
 }
 
-#contactus .contactus-content .form-container form .form-control {
+#contactus .contactus-container .contactus-content .form-container form .form-control {
   margin-bottom: 12px;
 }
 
 @media (min-width: 1024px) {
-  #contactus .contactus-content .form-container form .form-control {
+  #contactus .contactus-container .contactus-content .form-container form .form-control {
     margin-bottom: 8px;
   }
 }
 
-#contactus .contactus-content .form-container form .form-control input {
+#contactus .contactus-container .contactus-content .form-container form .form-control input {
   width: 100%;
   padding-left: 10px;
   border: 0;
@@ -595,35 +595,35 @@ header .brand {
   height: 30px;
 }
 
-#contactus .contactus-content .form-container form .form-control input::-webkit-input-placeholder {
+#contactus .contactus-container .contactus-content .form-container form .form-control input::-webkit-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
   font-size: 1.5rem;
   padding-left: 5px;
 }
 
-#contactus .contactus-content .form-container form .form-control input:-ms-input-placeholder {
+#contactus .contactus-container .contactus-content .form-container form .form-control input:-ms-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
   font-size: 1.5rem;
   padding-left: 5px;
 }
 
-#contactus .contactus-content .form-container form .form-control input::-ms-input-placeholder {
+#contactus .contactus-container .contactus-content .form-container form .form-control input::-ms-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
   font-size: 1.5rem;
   padding-left: 5px;
 }
 
-#contactus .contactus-content .form-container form .form-control input::placeholder {
+#contactus .contactus-container .contactus-content .form-container form .form-control input::placeholder {
   font-family: "Open Sans";
   color: #2e5776;
   font-size: 1.5rem;
   padding-left: 5px;
 }
 
-#contactus .contactus-content .form-container form .form-control textarea {
+#contactus .contactus-container .contactus-content .form-container form .form-control textarea {
   width: 100%;
   height: 170px;
   padding-left: 5px;
@@ -631,7 +631,7 @@ header .brand {
   outline: none;
 }
 
-#contactus .contactus-content .form-container form .form-control textarea::-webkit-input-placeholder {
+#contactus .contactus-container .contactus-content .form-container form .form-control textarea::-webkit-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
   font-size: 1.5rem;
@@ -639,7 +639,7 @@ header .brand {
   padding-top: 3px;
 }
 
-#contactus .contactus-content .form-container form .form-control textarea:-ms-input-placeholder {
+#contactus .contactus-container .contactus-content .form-container form .form-control textarea:-ms-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
   font-size: 1.5rem;
@@ -647,7 +647,7 @@ header .brand {
   padding-top: 3px;
 }
 
-#contactus .contactus-content .form-container form .form-control textarea::-ms-input-placeholder {
+#contactus .contactus-container .contactus-content .form-container form .form-control textarea::-ms-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
   font-size: 1.5rem;
@@ -655,7 +655,7 @@ header .brand {
   padding-top: 3px;
 }
 
-#contactus .contactus-content .form-container form .form-control textarea::placeholder {
+#contactus .contactus-container .contactus-content .form-container form .form-control textarea::placeholder {
   font-family: "Open Sans";
   color: #2e5776;
   font-size: 1.5rem;
@@ -663,7 +663,7 @@ header .brand {
   padding-top: 3px;
 }
 
-#contactus .contactus-content .form-container form .btn-sumbit {
+#contactus .contactus-container .contactus-content .form-container form .btn-sumbit {
   border: 0;
   outline: none;
   background-color: #6ea4ca;
@@ -674,25 +674,25 @@ header .brand {
   cursor: pointer;
 }
 
-#contactus .contactus-content .form-container form .btn-sumbit:hover {
+#contactus .contactus-container .contactus-content .form-container form .btn-sumbit:hover {
   color: #0c3c60;
 }
 
 @media (min-width: 1024px) {
-  #contactus .contactus-content .form-container form .btn-sumbit {
+  #contactus .contactus-container .contactus-content .form-container form .btn-sumbit {
     width: 41%;
     padding: 4px 10px;
   }
 }
 
-#contactus .contactus-content .contactus-map {
+#contactus .contactus-container .contactus-content .contactus-map {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
 }
 
 @media (min-width: 1024px) {
-  #contactus .contactus-content .contactus-map {
+  #contactus .contactus-container .contactus-content .contactus-map {
     width: 487px;
     grid-area: card1;
     -ms-grid-row: 1;
@@ -701,13 +701,13 @@ header .brand {
   }
 }
 
-#contactus .contactus-content .contactus-map #map {
+#contactus .contactus-container .contactus-content .contactus-map #map {
   width: 100%;
   height: 270px;
 }
 
 @media (min-width: 1024px) {
-  #contactus .contactus-content .contactus-map #map {
+  #contactus .contactus-container .contactus-content .contactus-map #map {
     height: 520px;
   }
 }
