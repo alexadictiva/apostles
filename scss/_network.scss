@@ -1,41 +1,69 @@
 /*network*/
 
 #network {
-  @include padding;
+  padding: 40px 20px;
+  @include desktop {
+    padding-bottom: 80px;
+  }
+  .map-container {
+    max-width: 1000px;
+    margin: auto;
+  }
   .description-network {
     margin: 40px 0;
+    @include desktop {
+      max-width: 900px;
+      margin: 40px auto;
+    }
     p {
-      line-height: 2.6rem;
+      font-size: 1.5rem;
+      line-height: 2.2rem;
+
+      @include desktop {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        text-align: justify;
+      }
       span {
         font-weight: bold;
       }
     }
   }
   .description-cloud-container {
+    @include desktop {
+      max-width: 915px;
+      margin: auto;
+      text-align: center;
+    }
     .description-cloud-content {
       position: relative;
-      background: $color1;
+      background: $color7;
       padding: 20px;
+
       p {
         font-style: italic;
         position: relative;
         z-index: 10;
         color: $white;
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+        padding: 5px 0;
       }
       &::after {
         content: " ";
         position: absolute;
-        bottom: -20px;
-        left: calc(50% - 15px);
-        background-color: $color1;
-        width: 40px;
-        height: 40px;
+        bottom: -10px;
+        left: calc(50% - 10px);
+        background-color: $color7;
+        width: 20px;
+        height: 20px;
         transform: rotate(45deg);
       }
     }
     .description-cloud-author {
       p {
-        margin-top: 30px;
+        margin-top: 20px;
+        font-size: 1.5rem;
       }
     }
   }

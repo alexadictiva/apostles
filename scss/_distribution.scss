@@ -15,6 +15,9 @@
       p {
         margin: auto;
         text-align: justify;
+        @include desktop {
+          font-size: 1.6rem;
+        }
       }
     }
 
@@ -41,7 +44,7 @@
         max-width: 280px;
         width: 160px;
         @include tablet {
-          width: 210px;
+          width: 220px;
         }
         .card-container-title {
           background-color: $color6;

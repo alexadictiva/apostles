@@ -23,9 +23,8 @@
     }
     &:last-child {
       padding: 15px 20px 20px;
-      font-size: 1.9rem;
+      font-size: 1.5rem;
       @include desktop {
-        font-size: 1.5rem;
         padding: 5px 20px 20px 20px;
       }
     }

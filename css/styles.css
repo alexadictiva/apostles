@@ -28,9 +28,9 @@
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: "Open Sans";
-  color: #2e5776;
+  color: #0c3c60;
 }
 
 img {
@@ -267,14 +267,10 @@ header .brand {
   text-align: center;
   font-family: "Raleway";
   color: #ffffff;
-  /* @include tablet {
-      padding: 45px 20px;
-    } */
 }
 
 #intro .intro-container .intro-description-bolder {
   margin-bottom: 20px;
-  letter-spacing: 0.05em;
 }
 
 @media (min-width: 1024px) {
@@ -290,16 +286,15 @@ header .brand {
 
 @media (min-width: 768px) {
   #intro .intro-container .intro-description-bolder p {
-    letter-spacing: 2px;
     font-weight: 700;
-    font-size: 2.1rem;
+    font-size: 2rem;
     line-height: 2.5rem;
   }
 }
 
 #intro .intro-container .intro-description-normal h1 {
   font-weight: 400;
-  font-size: 3.1rem;
+  font-size: 2.7rem;
   line-height: 2.2rem;
 }
 
@@ -350,7 +345,7 @@ header .brand {
 .cards-main-view .card-main {
   background-color: #0c3c60;
   color: #ffffff;
-  padding: 100px 60px;
+  padding: 60px 40px;
   text-align: center;
   position: relative;
 }
@@ -358,13 +353,13 @@ header .brand {
 @media (min-width: 1024px) {
   .cards-main-view .card-main {
     padding: 40px 50px;
-    width: 320px;
+    width: 310px;
   }
 }
 
 .cards-main-view .card-main h2 {
   font-family: "Raleway";
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -377,19 +372,12 @@ header .brand {
 
 .cards-main-view .card-main p {
   margin-bottom: 30px;
-  font-size: 1.9rem;
-  line-height: 2.6rem;
-  /*  @include tablet {
-        margin-bottom: 50px;
-        padding: 0 20px;
-        font-size: 3rem;
-        line-height: 4.4rem;
-      } */
+  font-size: 1.6rem;
+  line-height: 2.3rem;
 }
 
 @media (min-width: 1024px) {
   .cards-main-view .card-main p {
-    font-size: 1.6rem;
     line-height: 2.5rem;
     margin-bottom: 65px;
   }
@@ -397,17 +385,12 @@ header .brand {
 
 .cards-main-view .card-main .read-more-btn {
   background-color: #6ea4ca;
-  padding: 15px 0;
+  padding: 8px 0;
   color: #ffffff;
-  font-size: 2.3rem;
+  font-size: 1.7rem;
   display: block;
-  width: 190px;
+  width: 60%;
   margin: auto;
-  /*  @include tablet {
-      width: 310px;
-      padding: 15px 0;
-      font-size: 3.5rem;
-    } */
 }
 
 @media (min-width: 1024px) {
@@ -433,7 +416,7 @@ header .brand {
 
 .about-main-view .overlay {
   background-color: #0c3c60bd;
-  padding: 60px 40px 85px;
+  padding: 60px 35px 85px;
   text-align: center;
   color: #ffffff;
 }
@@ -441,32 +424,21 @@ header .brand {
 .about-main-view .overlay h2 {
   margin-bottom: 35px;
   font-family: "Raleway";
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   line-height: 5rem;
   font-weight: 500;
-  /* @include tablet {
-        font-size: 5rem;
-      } */
 }
 
 @media (min-width: 1024px) {
   .about-main-view .overlay h2 {
-    font-size: 5.5rem;
+    font-size: 5.8rem;
   }
 }
 
 .about-main-view .overlay p {
-  max-width: 768px;
-  margin: 0 auto 90px;
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  /* @include tablet {
-        max-width: 768px;
-        margin: 0 auto 90px;
-        font-size: 3.3rem;
-        line-height: 4.3rem;
-        padding: 0 40px;
-      } */
+  max-width: 700px;
+  margin: 0 auto 60px;
+  line-height: 2.5rem;
 }
 
 @media (min-width: 1024px) {
@@ -478,17 +450,12 @@ header .brand {
 
 .about-main-view .overlay a {
   background-color: #6ea4ca;
-  padding: 15px 0;
+  padding: 8px 0;
   color: #ffffff;
-  font-size: 2.3rem;
+  font-size: 1.7rem;
   display: block;
-  width: 190px;
+  width: 60%;
   margin: auto;
-  /*  @include tablet {
-        width: 310px;
-        padding: 15px 0;
-        font-size: 3.5rem;
-      } */
 }
 
 @media (min-width: 1024px) {
@@ -510,22 +477,19 @@ header .brand {
   margin-bottom: 35px;
   font-family: "Raleway";
   font-weight: 500;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   line-height: 5rem;
-  /* @include tablet {
-      font-size: 5rem;
-    } */
 }
 
 @media (min-width: 1024px) {
   #contactus h2 {
-    font-size: 5.2rem;
+    font-size: 5.8rem;
     line-height: 5.5rem;
   }
 }
 
 #contactus .contactus-content {
-  max-width: 901px;
+  max-width: 915px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,17 +520,18 @@ header .brand {
 @media (min-width: 1024px) {
   #contactus .contactus-content .form-description {
     grid-area: card2;
+    padding: 0 25px;
   }
 }
 
 #contactus .contactus-content .form-description p:nth-child(1) {
   margin: 0 0 50px;
-  font-size: 1.8rem;
-  line-height: 2.6rem;
+  font-size: 1.6rem;
 }
 
 @media (min-width: 1024px) {
   #contactus .contactus-content .form-description p:nth-child(1) {
+    font-size: 1.6rem;
     margin-bottom: 35px;
     line-height: 2.3rem;
   }
@@ -575,15 +540,13 @@ header .brand {
 #contactus .contactus-content .form-description p:nth-child(2) {
   text-align: left;
   margin: 10px 0;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 1024px) {
   #contactus .contactus-content .form-description p:nth-child(2) {
     margin-bottom: 0;
-    font-size: 1.7rem;
-    line-height: 2.3rem;
+    line-height: 2.2rem;
   }
 }
 
@@ -597,7 +560,7 @@ header .brand {
 @media (min-width: 1024px) {
   #contactus .contactus-content .form-container {
     margin-top: -20px;
-    padding: 0;
+    padding: 0 25px;
     grid-area: card4;
     width: 100%;
   }
@@ -628,34 +591,34 @@ header .brand {
   padding-left: 10px;
   border: 0;
   outline: none;
-  height: 38px;
+  height: 30px;
 }
 
 #contactus .contactus-content .form-container form .form-control input::-webkit-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   padding-left: 5px;
 }
 
 #contactus .contactus-content .form-container form .form-control input:-ms-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   padding-left: 5px;
 }
 
 #contactus .contactus-content .form-container form .form-control input::-ms-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   padding-left: 5px;
 }
 
 #contactus .contactus-content .form-container form .form-control input::placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   padding-left: 5px;
 }
 
@@ -670,7 +633,7 @@ header .brand {
 #contactus .contactus-content .form-container form .form-control textarea::-webkit-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   padding-left: 15px;
   padding-top: 3px;
 }
@@ -678,7 +641,7 @@ header .brand {
 #contactus .contactus-content .form-container form .form-control textarea:-ms-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   padding-left: 15px;
   padding-top: 3px;
 }
@@ -686,7 +649,7 @@ header .brand {
 #contactus .contactus-content .form-container form .form-control textarea::-ms-input-placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   padding-left: 15px;
   padding-top: 3px;
 }
@@ -694,7 +657,7 @@ header .brand {
 #contactus .contactus-content .form-container form .form-control textarea::placeholder {
   font-family: "Open Sans";
   color: #2e5776;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   padding-left: 15px;
   padding-top: 3px;
 }
@@ -705,15 +668,14 @@ header .brand {
   background-color: #6ea4ca;
   padding: 10px 30px;
   color: #ffffff;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   width: 100%;
 }
 
 @media (min-width: 1024px) {
   #contactus .contactus-content .form-container form .btn-sumbit {
-    width: 40%;
-    padding: 8px 10px;
-    font-size: 2.1rem;
+    width: 41%;
+    padding: 4px 10px;
   }
 }
 
@@ -725,6 +687,7 @@ header .brand {
 
 @media (min-width: 1024px) {
   #contactus .contactus-content .contactus-map {
+    width: 487px;
     grid-area: card1;
     -ms-grid-row: 1;
         grid-row-start: 1;
@@ -890,6 +853,12 @@ header .brand {
   text-align: justify;
 }
 
+@media (min-width: 1024px) {
+  #distribution .distribution-container .distribution-description-container p {
+    font-size: 1.6rem;
+  }
+}
+
 #distribution .distribution-container .distribution-cards-container {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -935,7 +904,7 @@ header .brand {
 
 @media (min-width: 768px) {
   #distribution .distribution-container .distribution-cards-container .card-container {
-    width: 210px;
+    width: 220px;
   }
 }
 
@@ -960,25 +929,59 @@ header .brand {
 
 /*network*/
 #network {
-  text-align: center;
   padding: 40px 20px;
+}
+
+@media (min-width: 1024px) {
+  #network {
+    padding-bottom: 80px;
+  }
+}
+
+#network .map-container {
+  max-width: 1000px;
+  margin: auto;
 }
 
 #network .description-network {
   margin: 40px 0;
 }
 
+@media (min-width: 1024px) {
+  #network .description-network {
+    max-width: 900px;
+    margin: 40px auto;
+  }
+}
+
 #network .description-network p {
-  line-height: 2.6rem;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+@media (min-width: 1024px) {
+  #network .description-network p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: justify;
+  }
 }
 
 #network .description-network p span {
   font-weight: bold;
 }
 
+@media (min-width: 1024px) {
+  #network .description-cloud-container {
+    max-width: 915px;
+    margin: auto;
+    text-align: center;
+  }
+}
+
 #network .description-cloud-container .description-cloud-content {
   position: relative;
-  background: #2e5776;
+  background: #39729b;
   padding: 20px;
 }
 
@@ -987,22 +990,26 @@ header .brand {
   position: relative;
   z-index: 10;
   color: #ffffff;
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  padding: 5px 0;
 }
 
 #network .description-cloud-container .description-cloud-content::after {
   content: " ";
   position: absolute;
-  bottom: -20px;
-  left: calc(50% - 15px);
-  background-color: #2e5776;
-  width: 40px;
-  height: 40px;
+  bottom: -10px;
+  left: calc(50% - 10px);
+  background-color: #39729b;
+  width: 20px;
+  height: 20px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
 #network .description-cloud-container .description-cloud-author p {
-  margin-top: 30px;
+  margin-top: 20px;
+  font-size: 1.5rem;
 }
 
 #portfolio {
@@ -1018,52 +1025,66 @@ header .brand {
 }
 
 #portfolio .swiper .arrow-next {
+  z-index: 20;
   cursor: pointer;
   position: absolute;
   right: 0;
-  bottom: 100px;
+  bottom: 90px;
 }
 
 @media (min-width: 394px) {
   #portfolio .swiper .arrow-next {
-    bottom: 76px;
+    bottom: 70px;
+  }
+}
+
+@media (min-width: 375px) {
+  #portfolio .swiper .arrow-next {
+    bottom: 70px;
   }
 }
 
 @media (min-width: 768px) {
   #portfolio .swiper .arrow-next {
-    bottom: 52px;
+    bottom: 48px;
   }
 }
 
 @media (min-width: 1024px) {
   #portfolio .swiper .arrow-next {
-    bottom: 28px;
+    bottom: 26px;
   }
 }
 
 #portfolio .swiper .arrow-back {
+  z-index: 20;
   cursor: pointer;
   position: absolute;
-  bottom: 100px;
+  bottom: 90px;
   right: 60px;
 }
 
 @media (min-width: 394px) {
   #portfolio .swiper .arrow-back {
-    bottom: 76px;
+    bottom: 70px;
+  }
+}
+
+@media (min-width: 375px) {
+  #portfolio .swiper .arrow-back {
+    bottom: 70px;
   }
 }
 
 @media (min-width: 768px) {
   #portfolio .swiper .arrow-back {
-    bottom: 52px;
+    bottom: 48px;
   }
 }
 
 @media (min-width: 1024px) {
   #portfolio .swiper .arrow-back {
-    bottom: 28px;
+    bottom: 26px;
   }
 }
 
@@ -1155,6 +1176,20 @@ header .brand {
   }
 }
 
+@media (min-width: 1024px) {
+  #portfolio .portfolio-description {
+    margin-bottom: 160px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #portfolio .portfolio-description p {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    text-align: justify;
+  }
+}
+
 /*footer*/
 #footer {
   padding: 15px 0 0 0;
@@ -1192,12 +1227,11 @@ header .brand {
 
 #footer div:last-child {
   padding: 15px 20px 20px;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 1024px) {
   #footer div:last-child {
-    font-size: 1.5rem;
     padding: 5px 20px 20px 20px;
   }
 }
