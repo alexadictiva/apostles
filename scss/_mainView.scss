@@ -101,6 +101,9 @@
       display: block;
       width: 60%;
       margin: auto;
+      &:hover {
+        color: $color2;
+      }
       @include desktop {
         width: 130px;
         font-size: 1.6rem;
@@ -150,6 +153,9 @@
       display: block;
       width: 60%;
       margin: auto;
+      &:hover {
+        color: $color2;
+      }
       @include desktop {
         width: 120px;
         font-size: 1.5rem;
@@ -282,6 +288,10 @@
           color: $white;
           font-size: 1.7rem;
           width: 100%;
+          cursor: pointer;
+          &:hover {
+            color: $color2;
+          }
           @include desktop {
             width: 41%;
             padding: 4px 10px;
