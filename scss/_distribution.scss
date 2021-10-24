@@ -41,6 +41,10 @@
         min-width: 160px;
         max-width: 280px;
         width: 160px;
+        transition: 0.5s;
+        &:hover {
+          filter: opacity(0.5);
+        }
         @include tablet {
           width: 220px;
         }

@@ -57,6 +57,7 @@ iframe {
 .title {
   font-size: 3.5rem;
   color: #2e5776;
+  font-weight: normal;
 }
 
 hr {
@@ -111,6 +112,7 @@ header .brand a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #0c3c60;
 }
 
 @media (min-width: 768px) {
@@ -135,6 +137,17 @@ header .brand a img {
 @media (min-width: 1024px) {
   header .brand a img {
     width: 80px;
+  }
+}
+
+header .brand a span {
+  color: #0c3c60;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  header .brand a span {
+    margin-left: 15px;
   }
 }
 
@@ -349,6 +362,7 @@ header .brand a img {
 #intro .intro-container .intro-description-normal h1 {
   font-size: 3.2rem;
   line-height: 2.2rem;
+  font-weight: normal;
 }
 
 @media (min-width: 1024px) {
@@ -800,52 +814,48 @@ header .brand a img {
   }
 }
 
-#about .about-cards-container article {
+#about .about-cards-container .card-container {
   margin-bottom: 20px;
 }
 
 @media (min-width: 1024px) {
-  #about .about-cards-container article {
+  #about .about-cards-container .card-container {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /*height: 830px;*/
     max-width: 200px;
   }
-  #about .about-cards-container article:hover > .card {
-    visibility: visible;
-  }
-  #about .about-cards-container article:nth-child(1) {
+  #about .about-cards-container .card-container:nth-child(1) {
     background-image: url("./../assets/images/aboutUs/ourVision.jpg");
   }
-  #about .about-cards-container article:nth-child(2) {
+  #about .about-cards-container .card-container:nth-child(2) {
     background-image: url("./../assets/images/aboutUs/ourTeam.jpg");
   }
-  #about .about-cards-container article:nth-child(3) {
+  #about .about-cards-container .card-container:nth-child(3) {
     background-image: url("./../assets/images/aboutUs/ourMission.jpg");
   }
 }
 
-#about .about-cards-container article .card {
+#about .about-cards-container .card-container .card {
   padding: 40px 20px;
   background-color: #f2f5f7;
   color: #0c3c60;
 }
 
 @media (min-width: 1024px) {
-  #about .about-cards-container article .card {
+  #about .about-cards-container .card-container .card {
     color: #ffffff;
     background-color: #0c3c60bd;
     height: 100%;
     width: 100%;
     padding: 60px 30px;
-    visibility: hidden;
+    opacity: 0;
     -webkit-transition: visibility 0.5s ease-in-out;
     transition: visibility 0.5s ease-in-out;
   }
 }
 
-#about .about-cards-container article .card h3 {
+#about .about-cards-container .card-container .card h3 {
   font-size: 2.3rem;
   line-height: 3rem;
   margin-bottom: 10px;
@@ -853,22 +863,26 @@ header .brand a img {
 }
 
 @media (min-width: 1024px) {
-  #about .about-cards-container article .card h3 {
+  #about .about-cards-container .card-container .card h3 {
     font-size: 2.2rem;
   }
 }
 
-#about .about-cards-container article .card p {
+#about .about-cards-container .card-container .card p {
   font-size: 1.6rem;
   line-height: 2.2rem;
 }
 
 @media (min-width: 1024px) {
-  #about .about-cards-container article .card p {
+  #about .about-cards-container .card-container .card p {
     font-size: 1.3rem;
     line-height: 1.8rem;
     text-align: left;
   }
+}
+
+#about .about-cards-container .card-container:hover > .card {
+  opacity: 1;
 }
 
 /*distribution*/
@@ -954,6 +968,13 @@ header .brand a img {
   min-width: 160px;
   max-width: 280px;
   width: 160px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#distribution .distribution-container .distribution-cards-container .card-container:hover {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
 }
 
 @media (min-width: 768px) {
@@ -1009,13 +1030,13 @@ header .brand a img {
 }
 
 #network .description-network p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 2.2rem;
+  text-align: center;
 }
 
 @media (min-width: 1024px) {
   #network .description-network p {
-    font-size: 1.6rem;
     line-height: 2.4rem;
     text-align: justify;
   }
@@ -1080,27 +1101,27 @@ header .brand a img {
 
 #portfolio .swiper .arrow-back,
 #portfolio .swiper .arrow-next {
+  z-index: 20;
+  cursor: pointer;
+  position: absolute;
   bottom: 50px;
-}
-
-@media (min-width: 375px) {
-  #portfolio .swiper .arrow-back,
-  #portfolio .swiper .arrow-next {
-    bottom: 50px;
-  }
 }
 
 @media (min-width: 394px) {
   #portfolio .swiper .arrow-back,
   #portfolio .swiper .arrow-next {
-    bottom: 31px;
+    bottom: 51px;
+  }
+}
+
+@media (min-width: 768px) {
+  #portfolio .swiper .arrow-back,
+  #portfolio .swiper .arrow-next {
+    bottom: 34px;
   }
 }
 
 #portfolio .swiper .arrow-next {
-  z-index: 20;
-  cursor: pointer;
-  position: absolute;
   right: 0;
 }
 
@@ -1110,13 +1131,16 @@ header .brand a img {
   padding-right: 14px;
   z-index: 10;
   font-size: 1.6rem;
-  bottom: 34px;
+  bottom: 53px;
+}
+
+@media (min-width: 768px) {
+  #portfolio .swiper .pagination {
+    bottom: 36px;
+  }
 }
 
 #portfolio .swiper .arrow-back {
-  z-index: 20;
-  cursor: pointer;
-  position: absolute;
   right: 51px;
 }
 

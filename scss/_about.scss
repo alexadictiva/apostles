@@ -20,15 +20,12 @@
       justify-content: center;
       gap: 20px;
     }
-    article {
+    .card-container {
       margin-bottom: 20px;
       @include desktop {
         @include bgImages;
-        /*height: 830px;*/
         max-width: 200px;
-        &:hover > .card {
-          visibility: visible;
-        }
+
         &:nth-child(1) {
           background-image: url("./../assets/images/aboutUs/ourVision.jpg");
         }
@@ -49,7 +46,7 @@
           height: 100%;
           width: 100%;
           padding: 60px 30px;
-          visibility: hidden;
+          opacity: 0;
           transition: visibility 0.5s ease-in-out;
         }
         h3 {
@@ -70,6 +67,9 @@
             text-align: left;
           }
         }
+      }
+      &:hover > .card {
+        opacity: 1;
       }
     }
   }

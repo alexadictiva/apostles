@@ -16,11 +16,11 @@
       margin: 40px auto;
     }
     p {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       line-height: 2.2rem;
+      text-align: center;
 
       @include desktop {
-        font-size: 1.6rem;
         line-height: 2.4rem;
         text-align: justify;
       }

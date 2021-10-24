@@ -7,18 +7,19 @@
     height: 100%;
     .arrow-back,
     .arrow-next {
-      bottom: 50px;
-      @include moto-mini {
-        bottom: 50px;
-      }
-      @include moto {
-        bottom: 31px;
-      }
-    }
-    .arrow-next {
       z-index: 20;
       cursor: pointer;
       position: absolute;
+      bottom: 50px;
+
+      @include moto {
+        bottom: 51px;
+      }
+      @include tablet {
+        bottom: 34px;
+      }
+    }
+    .arrow-next {
       right: 0;
     }
     .pagination {
@@ -27,13 +28,14 @@
       padding-right: 14px;
       z-index: 10;
       font-size: 1.6rem;
-      bottom: 34px;
+      bottom: 53px;
+
+      @include tablet {
+        bottom: 36px;
+      }
     }
 
     .arrow-back {
-      z-index: 20;
-      cursor: pointer;
-      position: absolute;
       right: 51px;
     }
 

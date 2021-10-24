@@ -18,6 +18,7 @@ header {
       display: flex;
       flex-direction: column;
       align-items: center;
+      color: $color2;
       @include tablet {
         flex-direction: row;
       }
@@ -28,6 +29,13 @@ header {
         }
         @include desktop {
           width: 80px;
+        }
+      }
+      span {
+        color: $color2;
+        font-size: 2rem;
+        @include tablet {
+          margin-left: 15px;
         }
       }
     }
