@@ -1,10 +1,10 @@
-@mixin moto {
-  @media (min-width: 394px) {
+@mixin moto-mini {
+  @media (min-width: 375px) {
     @content;
   }
 }
-@mixin moto-mini {
-  @media (min-width: 375px) {
+@mixin moto {
+  @media (min-width: 394px) {
     @content;
   }
 }

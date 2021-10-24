@@ -33,16 +33,16 @@ include './components/header.php';
               <p>Mid-Tier, Fashion & Luxury</p>
             </div>
 
-            <div
+            <!-- <div
               class="
                 swiper-pagination
                 swiper-pagination-fraction
                 swiper-pagination-horizontal
               "
             >
-              <!-- <span class="swiper-pagination-current"> 1</span> /
-              <span class="swiper-pagination-total">6</span> -->
-            </div>
+               <span class="swiper-pagination-current"> 1</span> /
+              <span class="swiper-pagination-total">6</span> 
+            </div> -->
           </div>
         </div>
         <!-- Finish Image1 -->
@@ -60,7 +60,7 @@ include './components/header.php';
               <p>Low-Tier, Mid-Tier & Fashion</p>
             </div>
 
-            <div
+            <!-- <div
               class="
                 swiper-pagination
                 swiper-pagination-fraction
@@ -69,7 +69,7 @@ include './components/header.php';
             >
               <span class="swiper-pagination-current"> 1</span> /
               <span class="swiper-pagination-total">6</span>
-            </div>
+            </div> -->
           </div>
         </div>
         <!-- Finish Image2 -->
@@ -87,7 +87,7 @@ include './components/header.php';
               <p>Leather & Fashion</p>
             </div>
 
-            <div
+            <!-- <div
               class="
                 swiper-pagination
                 swiper-pagination-fraction
@@ -96,7 +96,7 @@ include './components/header.php';
             >
               <span class="swiper-pagination-current"> 1</span> /
               <span class="swiper-pagination-total">6</span>
-            </div>
+            </div> -->
           </div>
         </div>
         <!-- Finish Image3 -->
@@ -114,7 +114,7 @@ include './components/header.php';
               <p>Leather & Fashion</p>
             </div>
 
-            <div
+            <!--  <div
               class="
                 swiper-pagination
                 swiper-pagination-fraction
@@ -123,7 +123,7 @@ include './components/header.php';
             >
               <span class="swiper-pagination-current"> 1</span> /
               <span class="swiper-pagination-total">6</span>
-            </div>
+            </div> -->
           </div>
         </div>
         <!-- Finish Image4 -->
@@ -140,7 +140,7 @@ include './components/header.php';
               <h4>HOME GOODS</h4>
               <p>Appliances, Kitchen Ware, Table Ware & Cook Ware</p>
             </div>
-
+            <!-- 
             <div
               class="
                 swiper-pagination
@@ -150,11 +150,11 @@ include './components/header.php';
             >
               <span class="swiper-pagination-current"> 1</span> /
               <span class="swiper-pagination-total">6</span>
-            </div>
+            </div> -->
           </div>
         </div>
         <!-- Finish Image5 -->
-        <!-- Start Image6 -->
+        <!-- Start Image6  se lo saque a este-->
         <div
           class="swiper-slide swiper-slide-active slide6"
           role="group"
@@ -166,17 +166,6 @@ include './components/header.php';
             <div>
               <h4>&</h4>
               <p>MORE TO COME...</p>
-            </div>
-
-            <div
-              class="
-                swiper-pagination
-                swiper-pagination-fraction
-                swiper-pagination-horizontal
-              "
-            >
-              <span class="swiper-pagination-current"> 1</span> /
-              <span class="swiper-pagination-total">6</span>
             </div>
           </div>
         </div>
@@ -192,6 +181,15 @@ include './components/header.php';
         aria-disabled="false"
       >
         <img src="./assets/icon/arrow-next.svg" alt="arrow next icon" />
+      </div>
+      <div
+        class="
+          pagination
+          swiper-pagination-fraction swiper-pagination-horizontal
+        "
+      >
+        <span class="swiper-pagination-current"> 1</span> /
+        <span class="swiper-pagination-total">6</span>
       </div>
       <div
         class="arrow-back"
@@ -227,7 +225,7 @@ include './components/header.php';
     autoplay: true,
     duration: 2500,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".pagination",
       type: "fraction",
     },
     navigation: {
