@@ -30,16 +30,16 @@
     }
   }
   .description-cloud-container {
+    text-align: center;
     @include desktop {
       max-width: 915px;
       margin: auto;
-      text-align: center;
     }
     .description-cloud-content {
       position: relative;
       background: $color7;
       padding: 20px;
-
+      text-align: center;
       p {
         font-style: italic;
         position: relative;

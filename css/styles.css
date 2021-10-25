@@ -330,7 +330,7 @@ header .brand a span {
 #intro .intro-container {
   width: 100%;
   background-color: #ffffff50;
-  padding: 35px 20px;
+  padding: 30px 20px;
   text-align: center;
   font-family: "Raleway";
   color: #ffffff;
@@ -342,20 +342,26 @@ header .brand a span {
 
 @media (min-width: 1024px) {
   #intro .intro-container .intro-description-bolder {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 }
 
 #intro .intro-container .intro-description-bolder p {
-  font-weight: 900;
+  font-weight: bold;
   font-size: 1.8rem;
 }
 
 @media (min-width: 768px) {
   #intro .intro-container .intro-description-bolder p {
-    font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
     line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #intro .intro-container .intro-description-bolder p {
+    font-size: 2.3rem;
   }
 }
 
@@ -367,9 +373,9 @@ header .brand a span {
 
 @media (min-width: 1024px) {
   #intro .intro-container .intro-description-normal h1 {
-    font-size: 5.3rem;
+    font-size: 5.9rem;
     line-height: 4.3rem;
-    padding: 8px 0 15px;
+    padding: 6px 0;
   }
 }
 
@@ -827,12 +833,15 @@ header .brand a span {
   }
   #about .about-cards-container .card-container:nth-child(1) {
     background-image: url("./../assets/images/aboutUs/ourVision.jpg");
+    background-position: 40% center;
   }
   #about .about-cards-container .card-container:nth-child(2) {
     background-image: url("./../assets/images/aboutUs/ourTeam.jpg");
+    background-position: 40% center;
   }
   #about .about-cards-container .card-container:nth-child(3) {
     background-image: url("./../assets/images/aboutUs/ourMission.jpg");
+    background-position: 40% center;
   }
 }
 
@@ -968,19 +977,26 @@ header .brand a span {
   min-width: 160px;
   max-width: 280px;
   width: 160px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-#distribution .distribution-container .distribution-cards-container .card-container:hover {
-  -webkit-filter: opacity(0.5);
-          filter: opacity(0.5);
 }
 
 @media (min-width: 768px) {
   #distribution .distribution-container .distribution-cards-container .card-container {
     width: 220px;
   }
+}
+
+#distribution .distribution-container .distribution-cards-container .card-container .card-container-image {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#distribution .distribution-container .distribution-cards-container .card-container .card-container-image:hover {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+#distribution .distribution-container .distribution-cards-container .card-container .card-container-image img {
+  min-height: 200px;
 }
 
 #distribution .distribution-container .distribution-cards-container .card-container .card-container-title {
@@ -1046,11 +1062,14 @@ header .brand a span {
   font-weight: bold;
 }
 
+#network .description-cloud-container {
+  text-align: center;
+}
+
 @media (min-width: 1024px) {
   #network .description-cloud-container {
     max-width: 915px;
     margin: auto;
-    text-align: center;
   }
 }
 
@@ -1058,6 +1077,7 @@ header .brand a span {
   position: relative;
   background: #39729b;
   padding: 20px;
+  text-align: center;
 }
 
 #network .description-cloud-container .description-cloud-content p {
@@ -1110,7 +1130,7 @@ header .brand a span {
 @media (min-width: 394px) {
   #portfolio .swiper .arrow-back,
   #portfolio .swiper .arrow-next {
-    bottom: 51px;
+    bottom: 33px;
   }
 }
 
@@ -1134,14 +1154,21 @@ header .brand a span {
   bottom: 53px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 394px) {
   #portfolio .swiper .pagination {
     bottom: 36px;
   }
 }
 
+@media (min-width: 768px) {
+  #portfolio .swiper .pagination {
+    bottom: 40px;
+    font-size: 1.3rem;
+  }
+}
+
 #portfolio .swiper .arrow-back {
-  right: 51px;
+  right: 48px;
 }
 
 #portfolio .swiper .swiper-slide {
