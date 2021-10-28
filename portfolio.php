@@ -26,7 +26,27 @@ include './components/header.php';
           aria-label="1 / 6"
           style="width: 320px"
         >
-          <div class="portfolio-image portfolio-image1"></div>
+          <div class="portfolio-image portfolio-image1">
+            <picture>
+              <source
+                srcset="./assets/images/portfolio/mobile/watches.jpg"
+                media="(max-width: 414px)"
+              />
+              <source
+                srcset="./assets/images/portfolio/tablet/watches.jpg"
+                media="(max-width: 900px)"
+              />
+              <source
+                srcset="./assets/images/portfolio/desktop/watches.jpg"
+                media="(min-width: 901px)"
+              />
+
+              <img
+                src="./assets/images/portfolio/mobile/watches.jpg"
+                alt="watches"
+              />
+            </picture>
+          </div>
           <div class="alignement">
             <div>
               <h4>WATCHES</h4>
@@ -42,7 +62,27 @@ include './components/header.php';
           aria-label="2 / 6"
           style="width: 320px"
         >
-          <div class="portfolio-image portfolio-image2"></div>
+          <div class="portfolio-image portfolio-image2">
+            <picture>
+              <source
+                srcset="./assets/images/portfolio/mobile/jewlery.jpg"
+                media="(max-width: 414px)"
+              />
+              <source
+                srcset="./assets/images/portfolio/tablet/jewlery.jpg"
+                media="(max-width: 900px)"
+              />
+              <source
+                srcset="./assets/images/portfolio/desktop/jewlery.jpg"
+                media="(min-width: 901px)"
+              />
+
+              <img
+                src="./assets/images/portfolio/mobile/jewlery.jpg"
+                alt="Jewlery"
+              />
+            </picture>
+          </div>
           <div class="alignement">
             <div>
               <h4>JEWLERY</h4>
@@ -58,7 +98,27 @@ include './components/header.php';
           aria-label="3 / 6"
           style="width: 320px"
         >
-          <div class="portfolio-image portfolio-image3"></div>
+          <div class="portfolio-image portfolio-image3">
+            <picture>
+              <source
+                srcset="./assets/images/portfolio/mobile/handbags.jpg"
+                media="(max-width: 414px)"
+              />
+              <source
+                srcset="./assets/images/portfolio/tablet/handbags.jpg"
+                media="(max-width: 900px)"
+              />
+              <source
+                srcset="./assets/images/portfolio/desktop/handbags.jpg"
+                media="(min-width: 901px)"
+              />
+
+              <img
+                src="./assets/images/portfolio/mobile/handbags.jpg"
+                alt="Hands Bag"
+              />
+            </picture>
+          </div>
           <div class="alignement">
             <div>
               <h4>HANDBAGS</h4>
@@ -74,7 +134,27 @@ include './components/header.php';
           aria-label="4 / 6"
           style="width: 320px"
         >
-          <div class="portfolio-image portfolio-image4"></div>
+          <div class="portfolio-image portfolio-image4">
+            <picture>
+              <source
+                srcset="./assets/images/portfolio/mobile/travelGear.jpg"
+                media="(max-width: 414px)"
+              />
+              <source
+                srcset="./assets/images/portfolio/tablet/travelGear.jpg"
+                media="(max-width: 900px)"
+              />
+              <source
+                srcset="./assets/images/portfolio/desktop/travelGear.jpg"
+                media="(min-width: 901px)"
+              />
+
+              <img
+                src="./assets/images/portfolio/mobile/travelGear.jpg"
+                alt="Travel Gear"
+              />
+            </picture>
+          </div>
           <div class="alignement">
             <div>
               <h4>TRAVEL GEAR</h4>
@@ -90,7 +170,27 @@ include './components/header.php';
           aria-label="5 / 6"
           style="width: 320px"
         >
-          <div class="portfolio-image portfolio-image5"></div>
+          <div class="portfolio-image portfolio-image5">
+            <picture>
+              <source
+                srcset="./assets/images/portfolio/mobile/homeGoods.jpg"
+                media="(max-width: 414px)"
+              />
+              <source
+                srcset="./assets/images/portfolio/tablet/homeGoods.jpg"
+                media="(max-width: 900px)"
+              />
+              <source
+                srcset="./assets/images/portfolio/desktop/homeGoods.jpg"
+                media="(min-width: 901px)"
+              />
+
+              <img
+                src="./assets/images/portfolio/mobile/homeGoods.jpg"
+                alt="Home Goods"
+              />
+            </picture>
+          </div>
           <div class="alignement">
             <div>
               <h4>HOME GOODS</h4>
@@ -106,7 +206,27 @@ include './components/header.php';
           aria-label="6 / 6"
           style="width: 320px"
         >
-          <div class="portfolio-image portfolio-image6"></div>
+          <div class="portfolio-image portfolio-image6">
+            <picture>
+              <source
+                srcset="./assets/images/portfolio/mobile/moreToCome.jpg"
+                media="(max-width: 414px)"
+              />
+              <source
+                srcset="./assets/images/portfolio/tablet/moreToCome.jpg"
+                media="(max-width: 900px)"
+              />
+              <source
+                srcset="./assets/images/portfolio/desktop/moreToCome.jpg"
+                media="(min-width: 901px)"
+              />
+
+              <img
+                src="./assets/images/portfolio/mobile/moreToCome.jpg"
+                alt="More To Come"
+              />
+            </picture>
+          </div>
           <div class="alignement">
             <div>
               <h4>&</h4>
@@ -116,39 +236,42 @@ include './components/header.php';
         </div>
         <!-- Finish Image6 -->
       </div>
-      <!-- inicio flechas -->
-      <div
-        class="arrow-next"
-        tabindex="0"
-        role="button"
-        aria-label="Next slide"
-        aria-controls="swiper-wrapper-fda3f4823a8469d6"
-        aria-disabled="false"
-      >
-        <img src="./assets/icon/arrow-next.svg" alt="arrow next icon" />
-      </div>
-      <div
-        class="
-          pagination
-          swiper-pagination-fraction swiper-pagination-horizontal
-        "
-      >
-        <span class="swiper-pagination-current"> 1</span>/<span
-          class="swiper-pagination-total"
-          >6</span
+      <!-- Start Arrows -->
+      <div class="containerArrow">
+        <div
+          class="arrow-back"
+          tabindex="-1"
+          role="button"
+          aria-label="Previous slide"
+          aria-controls="swiper-wrapper-fda3f4823a8469d6"
+          aria-disabled="true"
         >
+          <img src="./assets/icon/arrow-back.svg" alt="arrow black icon" />
+        </div>
+
+        <div
+          class="
+            pagination
+            swiper-pagination-fraction swiper-pagination-horizontal
+          "
+        >
+          <span class="swiper-pagination-current"> 1</span>/<span
+            class="swiper-pagination-total"
+            >6</span
+          >
+        </div>
+        <div
+          class="arrow-next"
+          tabindex="0"
+          role="button"
+          aria-label="Next slide"
+          aria-controls="swiper-wrapper-fda3f4823a8469d6"
+          aria-disabled="false"
+        >
+          <img src="./assets/icon/arrow-next.svg" alt="arrow next icon" />
+        </div>
       </div>
-      <div
-        class="arrow-back"
-        tabindex="-1"
-        role="button"
-        aria-label="Previous slide"
-        aria-controls="swiper-wrapper-fda3f4823a8469d6"
-        aria-disabled="true"
-      >
-        <img src="./assets/icon/arrow-back.svg" alt="arrow black icon" />
-      </div>
-      <!-- fin flechas -->
+      <!-- Finish Arrows -->
     </div>
     <div class="portfolio-description">
       <p>

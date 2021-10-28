@@ -115,6 +115,18 @@ header .brand a {
   color: #0c3c60;
 }
 
+header .brand a .titleBolder {
+  font-weight: bold;
+  color: #0c3c60;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  header .brand a .titleBolder {
+    margin-left: 15px;
+  }
+}
+
 @media (min-width: 768px) {
   header .brand a {
     -webkit-box-orient: horizontal;
@@ -125,29 +137,18 @@ header .brand a {
 }
 
 header .brand a img {
-  width: 80px;
+  width: 60px;
 }
 
 @media (min-width: 768px) {
   header .brand a img {
-    width: 100px;
+    width: 65px;
   }
 }
 
 @media (min-width: 1024px) {
   header .brand a img {
     width: 80px;
-  }
-}
-
-header .brand a span {
-  color: #0c3c60;
-  font-size: 2rem;
-}
-
-@media (min-width: 768px) {
-  header .brand a span {
-    margin-left: 15px;
   }
 }
 
@@ -1123,52 +1124,26 @@ header .brand a span {
 #portfolio .swiper .arrow-next {
   z-index: 20;
   cursor: pointer;
+}
+
+#portfolio .swiper .containerArrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  max-width: 765px;
+  margin: auto;
   position: absolute;
-  bottom: 50px;
-}
-
-@media (min-width: 394px) {
-  #portfolio .swiper .arrow-back,
-  #portfolio .swiper .arrow-next {
-    bottom: 33px;
-  }
-}
-
-@media (min-width: 768px) {
-  #portfolio .swiper .arrow-back,
-  #portfolio .swiper .arrow-next {
-    bottom: 34px;
-  }
-}
-
-#portfolio .swiper .arrow-next {
+  bottom: 27px;
   right: 0;
 }
 
-#portfolio .swiper .pagination {
-  position: absolute;
-  text-align: right;
-  padding-right: 14px;
+#portfolio .swiper .containerArrow .pagination {
   z-index: 10;
   font-size: 1.6rem;
-  bottom: 53px;
-}
-
-@media (min-width: 394px) {
-  #portfolio .swiper .pagination {
-    bottom: 36px;
-  }
-}
-
-@media (min-width: 768px) {
-  #portfolio .swiper .pagination {
-    bottom: 40px;
-    font-size: 1.3rem;
-  }
-}
-
-#portfolio .swiper .arrow-back {
-  right: 48px;
+  width: 50px !important;
 }
 
 #portfolio .swiper .swiper-slide {
@@ -1183,48 +1158,10 @@ header .brand a span {
 
 #portfolio .swiper .swiper-slide .portfolio-image {
   width: 100%;
-  height: 30vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-@media (min-width: 768px) {
-  #portfolio .swiper .swiper-slide .portfolio-image {
-    height: 50vh;
-  }
-}
-
-#portfolio .swiper .swiper-slide .portfolio-image1 {
-  background-image: url("./../assets/images/portfolio/watches.jpg");
-  background-position: 70%, 60%;
-}
-
-#portfolio .swiper .swiper-slide .portfolio-image2 {
-  background-image: url("./../assets/images/portfolio/jewlery.jpg");
-  background-position: 10%, 50%;
-}
-
-#portfolio .swiper .swiper-slide .portfolio-image3 {
-  background-image: url("./../assets/images/portfolio/handbags.jpg");
-  background-position: top, center;
-}
-
-#portfolio .swiper .swiper-slide .portfolio-image4 {
-  background-image: url("./../assets/images/portfolio/travelGear.jpg");
-}
-
-#portfolio .swiper .swiper-slide .portfolio-image5 {
-  background-image: url("./../assets/images/portfolio/homeGoods.jpg");
-  background-position: 10% 50%;
-}
-
-#portfolio .swiper .swiper-slide .portfolio-image6 {
-  background-image: url("./../assets/images/portfolio/moreToCome.jpg");
-  background-position: 100%, 50%;
 }
 
 #portfolio .swiper .swiper-slide .alignement {
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1235,7 +1172,8 @@ header .brand a span {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #0c3c60;
-  padding: 10px 10px;
+  max-width: 1024px;
+  padding: 10px 0px;
 }
 
 #portfolio .swiper .swiper-slide .alignement div:first-child {

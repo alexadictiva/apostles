@@ -9,37 +9,22 @@
     .arrow-next {
       z-index: 20;
       cursor: pointer;
-      position: absolute;
-      bottom: 50px;
-
-      @include moto {
-        bottom: 33px;
-      }
-      @include tablet {
-        bottom: 34px;
-      }
     }
-    .arrow-next {
+    .containerArrow {
+      display: flex;
+      justify-content: end;
+
+      max-width: 765px;
+      margin: auto;
+      position: absolute;
+      bottom: 27px;
       right: 0;
-    }
-    .pagination {
-      position: absolute;
-      text-align: right;
-      padding-right: 14px;
-      z-index: 10;
-      font-size: 1.6rem;
-      bottom: 53px;
-      @include moto {
-        bottom: 36px;
-      }
-      @include tablet {
-        bottom: 40px;
-        font-size: 1.3rem;
-      }
-    }
 
-    .arrow-back {
-      right: 48px;
+      .pagination {
+        z-index: 10;
+        font-size: 1.6rem;
+        width: 50px !important;
+      }
     }
 
     .swiper-slide {
@@ -49,42 +34,16 @@
 
       .portfolio-image {
         width: 100%;
-        height: 30vh;
-        @include bgImages;
-        @include tablet {
-          height: 50vh;
-        }
       }
 
-      .portfolio-image1 {
-        background-image: url("./../assets/images/portfolio/watches.jpg");
-        background-position: 70%, 60%;
-      }
-      .portfolio-image2 {
-        background-image: url("./../assets/images/portfolio/jewlery.jpg");
-        background-position: 10%, 50%;
-      }
-      .portfolio-image3 {
-        background-image: url("./../assets/images/portfolio/handbags.jpg");
-        background-position: top, center;
-      }
-      .portfolio-image4 {
-        background-image: url("./../assets/images/portfolio/travelGear.jpg");
-      }
-      .portfolio-image5 {
-        background-image: url("./../assets/images/portfolio/homeGoods.jpg");
-        background-position: 10% 50%;
-      }
-      .portfolio-image6 {
-        background-image: url("./../assets/images/portfolio/moreToCome.jpg");
-        background-position: 100%, 50%;
-      }
       .alignement {
+        margin: auto;
         display: flex;
         align-items: baseline;
         justify-content: space-between;
         color: $color2;
-        padding: 10px 10px;
+        max-width: 1024px;
+        padding: 10px 0px;
         div:first-child {
           width: 100%;
           text-align: initial;

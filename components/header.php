@@ -3,7 +3,7 @@
     <section class="brand">
       <a href="./index.php">
         <img src="./assets/images/logo.png" alt="Logo" />
-        <span> THE TWELVE APOSTLES INC. </span>
+        <span class="titleBolder"> THE TWELVE APOSTLES INC.</span>
       </a>
     </section>
     <section class="menu">
