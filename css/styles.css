@@ -324,12 +324,43 @@ header .brand a img {
 /*Main View*/
 /*intro*/
 #intro {
+  height: 100vh;
   position: relative;
+  background: url("./../assets/images/bgIntro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 1024px) {
+  #intro {
+    background: none;
+  }
+}
+
+#intro .video-container {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  #intro .video-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, right top, from(#0f0105), to(#2c0228));
+    background: linear-gradient(to right, #0f0105, #2c0228);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 #intro .intro-container {
   background: #0c3c60bd;
-  height: 75vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,12 +528,12 @@ header .brand a img {
 }
 
 .about-main-view .overlay {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
   background-color: #0c3c60bd;
   padding: 60px 35px 85px;
   text-align: center;
   color: #ffffff;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .about-main-view .overlay h2 {
@@ -554,12 +585,12 @@ header .brand a img {
 
 /*contact us main view*/
 #contactus .contactus-container {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   padding: 50px 25px 40px;
   text-align: center;
   color: #ffffff;
   background-color: #2e5776;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
 }
 
 #contactus .contactus-container h2 {

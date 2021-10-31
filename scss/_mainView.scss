@@ -2,11 +2,30 @@
 
 /*intro*/
 #intro {
+  height: 100vh;
   position: relative;
+  background: url("./../assets/images/bgIntro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include desktop {
+    background: none;
+  }
+  .video-container {
+    display: none;
 
+    @include desktop {
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(to right, $color8, $color9);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+  }
   .intro-container {
     background: $overlay2;
-    height: 75vh;
+    height: 100%;
     display: flex;
     align-items: center;
     position: relative;
@@ -127,11 +146,11 @@
 .about-main-view {
   margin: 20px 0;
   .overlay {
-    animation-duration: 2s;
     background-color: $overlay2;
     padding: 60px 35px 85px;
     text-align: center;
     color: $white;
+    animation-duration: 2s;
     h2 {
       margin-bottom: 35px;
       font-family: $fontTitle;
@@ -178,11 +197,11 @@
 
 #contactus {
   .contactus-container {
+    animation-duration: 2s;
     padding: 50px 25px 40px;
     text-align: center;
     color: $white;
     background-color: $color1;
-    animation-duration: 2s;
     h2 {
       margin-bottom: 35px;
       font-family: $fontTitle;

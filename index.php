@@ -5,6 +5,12 @@ include './components/header.php';
 
 <main>
   <section id="intro">
+    <div class="video-container">
+      <video autoplay="autoplay" loop playsinline muted>
+        <source src="./assets/video/bgMain.mp4" type="video/mp4" />
+      </video>
+    </div>
+
     <div class="intro-container">
       <div class="intro-content">
         <div class="intro-description-bolder">
