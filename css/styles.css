@@ -1,10 +1,12 @@
 @font-face {
   font-family: "Open Sans";
+  font-display: auto;
   src: url("./../fonts/OpenSans-Regular.ttf"), url("./../fonts/OpenSans-Regular.woff"), url("./../fonts/OpenSans-Regular.woff2");
 }
 
 @font-face {
   font-family: "Raleway";
+  font-display: auto;
   src: url("./../fonts/Raleway.woff2") format("woff2"), url("./../fonts/Raleway.woff") format("woff"), url("./../fonts/Raleway.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
@@ -62,13 +64,23 @@ iframe {
 
 hr {
   width: 100px;
-  margin: 15px auto 40px;
+  margin: 15px auto 20px;
   border: #0c3c60 1px solid;
+}
+
+@media (min-width: 1024px) {
+  hr {
+    margin-bottom: 70px;
+  }
 }
 
 h1 {
   font-size: 4rem;
   text-align: center;
+}
+
+h2 {
+  font-weight: normal;
 }
 
 .showed {
@@ -116,9 +128,9 @@ header .brand a {
 }
 
 header .brand a .titleBolder {
-  font-weight: bold;
   color: #0c3c60;
   font-size: 2rem;
+  font-weight: normal;
 }
 
 @media (min-width: 768px) {
@@ -312,7 +324,11 @@ header .brand a img {
 /*Main View*/
 /*intro*/
 #intro {
-  background-color: #2e5776;
+  position: relative;
+}
+
+#intro .intro-container {
+  background: #0c3c60bd;
   height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,15 +336,10 @@ header .brand a img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
-@media (min-width: 768px) {
-  #intro {
-    height: 100vh;
-  }
-}
-
-#intro .intro-container {
+#intro .intro-container .intro-content {
   width: 100%;
   background-color: #ffffff50;
   padding: 30px 20px;
@@ -337,23 +348,23 @@ header .brand a img {
   color: #ffffff;
 }
 
-#intro .intro-container .intro-description-bolder {
+#intro .intro-container .intro-content .intro-description-bolder {
   margin-bottom: 20px;
 }
 
 @media (min-width: 1024px) {
-  #intro .intro-container .intro-description-bolder {
+  #intro .intro-container .intro-content .intro-description-bolder {
     margin-bottom: 8px;
   }
 }
 
-#intro .intro-container .intro-description-bolder p {
+#intro .intro-container .intro-content .intro-description-bolder p {
   font-weight: bold;
   font-size: 1.8rem;
 }
 
 @media (min-width: 768px) {
-  #intro .intro-container .intro-description-bolder p {
+  #intro .intro-container .intro-content .intro-description-bolder p {
     font-size: 1.5rem;
     letter-spacing: 0.5px;
     line-height: 2.5rem;
@@ -361,19 +372,19 @@ header .brand a img {
 }
 
 @media (min-width: 1024px) {
-  #intro .intro-container .intro-description-bolder p {
+  #intro .intro-container .intro-content .intro-description-bolder p {
     font-size: 2.3rem;
   }
 }
 
-#intro .intro-container .intro-description-normal h1 {
+#intro .intro-container .intro-content .intro-description-normal h1 {
   font-size: 3.2rem;
   line-height: 2.2rem;
   font-weight: normal;
 }
 
 @media (min-width: 1024px) {
-  #intro .intro-container .intro-description-normal h1 {
+  #intro .intro-container .intro-content .intro-description-normal h1 {
     font-size: 5.9rem;
     line-height: 4.3rem;
     padding: 6px 0;
@@ -486,6 +497,8 @@ header .brand a img {
 }
 
 .about-main-view .overlay {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   background-color: #0c3c60bd;
   padding: 60px 35px 85px;
   text-align: center;
@@ -545,6 +558,8 @@ header .brand a img {
   text-align: center;
   color: #ffffff;
   background-color: #2e5776;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 #contactus .contactus-container h2 {
@@ -879,6 +894,8 @@ header .brand a img {
 }
 
 #about .about-cards-container .card-container .card p {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   font-size: 1.6rem;
   line-height: 2.2rem;
 }
@@ -931,12 +948,9 @@ header .brand a img {
 #distribution .distribution-container .distribution-description-container p {
   margin: auto;
   text-align: justify;
-}
-
-@media (min-width: 1024px) {
-  #distribution .distribution-container .distribution-description-container p {
-    font-size: 1.6rem;
-  }
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #2e5776;
 }
 
 #distribution .distribution-container .distribution-cards-container {
@@ -975,9 +989,9 @@ header .brand a img {
 #distribution .distribution-container .distribution-cards-container .card-container {
   -webkit-box-shadow: 1px 1px 8px #ffffff50;
           box-shadow: 1px 1px 8px #ffffff50;
-  min-width: 160px;
+  min-width: 135px;
   max-width: 280px;
-  width: 160px;
+  width: 135px;
 }
 
 @media (min-width: 768px) {
@@ -996,10 +1010,6 @@ header .brand a img {
           filter: opacity(0.5);
 }
 
-#distribution .distribution-container .distribution-cards-container .card-container .card-container-image img {
-  min-height: 200px;
-}
-
 #distribution .distribution-container .distribution-cards-container .card-container .card-container-title {
   background-color: #d1e0eb;
   height: 50px;
@@ -1013,6 +1023,7 @@ header .brand a img {
       -ms-flex-align: center;
           align-items: center;
   margin-top: -5px;
+  color: #2e5776;
 }
 
 #distribution .distribution-container .distribution-cards-container .card-container .card-container-title h3 {
@@ -1136,8 +1147,14 @@ header .brand a img {
   max-width: 765px;
   margin: auto;
   position: absolute;
-  bottom: 27px;
+  bottom: 45px;
   right: 0;
+}
+
+@media (min-width: 398px) {
+  #portfolio .swiper .containerArrow {
+    bottom: 27px;
+  }
 }
 
 #portfolio .swiper .containerArrow .pagination {
@@ -1214,12 +1231,14 @@ header .brand a img {
 
 #portfolio .portfolio-description p {
   color: #2e5776;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  text-align: left;
 }
 
 @media (min-width: 1024px) {
   #portfolio .portfolio-description p {
-    font-size: 1.6rem;
-    line-height: 2.3rem;
+    line-height: 2.4rem;
     text-align: justify;
   }
 }

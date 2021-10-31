@@ -2,51 +2,54 @@
 
 /*intro*/
 #intro {
-  background-color: $color1;
-  height: 75vh;
-  display: flex;
-  align-items: center;
-  @include tablet {
-    height: 100vh;
-  }
+  position: relative;
+
   .intro-container {
-    width: 100%;
-    background-color: $overlay1;
-    padding: 30px 20px;
-    text-align: center;
-    font-family: $fontTitle;
-    color: $white;
+    background: $overlay2;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    position: relative;
 
-    .intro-description-bolder {
-      margin-bottom: 20px;
-      @include desktop {
-        margin-bottom: 8px;
-      }
-      p {
-        font-weight: bold;
-        font-size: 1.8rem;
+    .intro-content {
+      width: 100%;
+      background-color: $overlay1;
+      padding: 30px 20px;
+      text-align: center;
+      font-family: $fontTitle;
+      color: $white;
 
-        @include tablet {
-          font-size: 1.5rem;
-          letter-spacing: 0.5px;
-          line-height: 2.5rem;
-        }
+      .intro-description-bolder {
+        margin-bottom: 20px;
         @include desktop {
-          font-size: 2.3rem;
+          margin-bottom: 8px;
+        }
+        p {
+          font-weight: bold;
+          font-size: 1.8rem;
+
+          @include tablet {
+            font-size: 1.5rem;
+            letter-spacing: 0.5px;
+            line-height: 2.5rem;
+          }
+          @include desktop {
+            font-size: 2.3rem;
+          }
         }
       }
-    }
 
-    .intro-description-normal {
-      h1 {
-        font-size: 3.2rem;
-        line-height: 2.2rem;
-        font-weight: normal;
+      .intro-description-normal {
+        h1 {
+          font-size: 3.2rem;
+          line-height: 2.2rem;
+          font-weight: normal;
 
-        @include desktop {
-          font-size: 5.9rem;
-          line-height: 4.3rem;
-          padding: 6px 0;
+          @include desktop {
+            font-size: 5.9rem;
+            line-height: 4.3rem;
+            padding: 6px 0;
+          }
         }
       }
     }
@@ -124,6 +127,7 @@
 .about-main-view {
   margin: 20px 0;
   .overlay {
+    animation-duration: 2s;
     background-color: $overlay2;
     padding: 60px 35px 85px;
     text-align: center;
@@ -178,6 +182,7 @@
     text-align: center;
     color: $white;
     background-color: $color1;
+    animation-duration: 2s;
     h2 {
       margin-bottom: 35px;
       font-family: $fontTitle;

@@ -15,9 +15,9 @@
       p {
         margin: auto;
         text-align: justify;
-        @include desktop {
-          font-size: 1.6rem;
-        }
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: $color1;
       }
     }
 
@@ -38,9 +38,9 @@
       }
       .card-container {
         box-shadow: 1px 1px 8px $overlay1;
-        min-width: 160px;
+        min-width: 135px;
         max-width: 280px;
-        width: 160px;
+        width: 135px;
 
         @include tablet {
           width: 220px;
@@ -50,9 +50,6 @@
           &:hover {
             filter: opacity(0.5);
           }
-          img {
-            min-height: 200px;
-          }
         }
         .card-container-title {
           background-color: $color6;
@@ -61,6 +58,7 @@
           justify-content: center;
           align-items: center;
           margin-top: -5px;
+          color: $color1;
           h3 {
             font: $font_7;
           }

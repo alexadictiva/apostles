@@ -35,12 +35,18 @@ iframe {
 }
 hr {
   width: 100px;
-  margin: 15px auto 40px;
+  margin: 15px auto 20px;
+  @include desktop {
+    margin-bottom: 70px;
+  }
   border: $color2 1px solid;
 }
 h1 {
   font-size: 4rem;
   text-align: center;
+}
+h2 {
+  font-weight: normal;
 }
 .showed {
   overflow: hidden;

@@ -20,9 +20,9 @@ header {
       align-items: center;
       color: $color2;
       .titleBolder {
-        font-weight: bold;
         color: $color2;
         font-size: 2rem;
+        font-weight: normal;
         @include tablet {
           margin-left: 15px;
         }

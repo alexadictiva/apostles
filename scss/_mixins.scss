@@ -1,15 +1,5 @@
 @mixin mini {
-  @media (max-width: 320px) {
-    @content;
-  }
-}
-@mixin moto-mini {
-  @media (min-width: 375px) {
-    @content;
-  }
-}
-@mixin moto {
-  @media (min-width: 394px) {
+  @media (min-width: 398px) {
     @content;
   }
 }
