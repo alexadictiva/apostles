@@ -1,16 +1,14 @@
 /*distribution*/
 #distribution {
   @include padding;
+  @include maxWidth;
   .distribution-container {
     display: flex;
     flex-direction: column;
     .distribution-description-container {
-      margin-bottom: 30px;
-      max-width: 700px;
-      order: 1;
+      margin: 30px 0 40px;
       @include tablet {
-        margin: 60px auto;
-        order: 2;
+        margin: 50px 0;
       }
       p {
         margin: auto;
@@ -22,16 +20,16 @@
     }
 
     .distribution-cards-container {
-      order: 2;
-      margin: auto;
-      max-width: 768px;
+      /*  order: 2; */
+      margin: 0 auto 40px;
+      /*   max-width: 768px; */
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
       justify-content: center;
 
       @include tablet {
-        order: 1;
+        /*  order: 1; */
         flex-direction: row;
         justify-content: center;
         gap: 20px;

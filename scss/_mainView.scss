@@ -4,13 +4,7 @@
 #intro {
   height: 100vh;
   position: relative;
-  background: url("./../assets/images/bgIntro.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  @include desktop {
-    background: none;
-  }
+
   .video-container {
     display: none;
 

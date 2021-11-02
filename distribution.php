@@ -9,15 +9,7 @@ include './components/header.php';
     <h1 class="title">DISTRIBUTION</h1>
     <hr />
     <div class="distribution-container">
-      <div class="distribution-description-container">
-        <p>
-          The Twelve Apostles Inc. has established commercial relationships with
-          various kind of clients thanks to the requirement of the new
-          distribution landscape. This allows brands to maximize the reach on a
-          global scale. We rely on relationships with market-leaders to provide the perfect price/product mix. Currently, Twelve Apostles Inc. distributes the multiple brand products over a variety of market channels.
-        </p>
-      </div>
-      <div class="distribution-cards-container">
+        <div class="distribution-cards-container">
         <article class="card-container">
           <div class="card-container-image">
             <picture>
@@ -189,6 +181,15 @@ include './components/header.php';
           </div>
         </article>
       </div>
+      <div class="distribution-description-container">
+        <p>
+          The Twelve Apostles Inc. has established commercial relationships with
+          various kind of clients thanks to the requirement of the new
+          distribution landscape. This allows brands to maximize the reach on a
+          global scale. We rely on relationships with market-leaders to provide the perfect price/product mix. Currently, Twelve Apostles Inc. distributes the multiple brand products over a variety of market channels.
+        </p>
+      </div>
+    
     </div>
   </section>
 </main>

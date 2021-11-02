@@ -25,3 +25,7 @@
   background-size: cover;
   background-position: center;
 }
+@mixin maxWidth {
+  max-width: 901px;
+  margin: auto;
+}
